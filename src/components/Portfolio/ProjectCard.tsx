@@ -11,7 +11,8 @@ type Props = {
 
 export default function ProjectCard({ title, desc, img, tools, demo, code }: Props) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const [flipped, setFlipped] = useState(false);
+  const [flipped, setFlipped] = useState(true);
+  const autoFlippedRef = useRef(false);
 
   useEffect(() => {
     const el = cardRef.current;
@@ -20,13 +21,20 @@ export default function ProjectCard({ title, desc, img, tools, demo, code }: Pro
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          el.classList.add("visible");
+          if (!autoFlippedRef.current) {
+            autoFlippedRef.current = true;
+
+            const timeout = setTimeout(() => {
+              setFlipped(false);
+            }, 600);
+
+            return () => clearTimeout(timeout);
+          }
         }
       });
     });
 
     observer.observe(el);
-
     return () => observer.disconnect();
   }, []);
 

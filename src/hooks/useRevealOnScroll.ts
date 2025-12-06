@@ -1,28 +1,50 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-export function useRevealOnScroll(threshold: number = 0.3) {
-    const elementRef = useRef<HTMLDivElement>(null);
+export function useFlipOnIntersect(
+  options?: {
+    delay?: number;          // ms antes de revelar
+    initialFlipped?: boolean; // true = empieza boca abajo
+  }
+) {
+  const { delay = 600, initialFlipped = true } = options || {};
 
-    useEffect(() => {
-        const el = elementRef.current;
-        if (!el) return;
+  const cardRef = useRef<HTMLDivElement | null>(null);
+  const [flipped, setFlipped] = useState(initialFlipped);
+  const autoFlippedRef = useRef(false);
 
-        const observer = new IntersectionObserver(
-            entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        el.classList.add("show");
-                        observer.disconnect();
-                    }
-                });
-            },
-            { threshold }
-        );
+  useEffect(() => {
+    const el = cardRef.current;
+    if (!el) return;
 
-        observer.observe(el);
+    let timeoutId: number | undefined;
 
-        return () => observer.disconnect();
-    }, [threshold]);
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !autoFlippedRef.current) {
+          autoFlippedRef.current = true;
 
-    return elementRef;
+          timeoutId = window.setTimeout(() => {
+            setFlipped(false); // revela el frente y se queda así
+          }, delay);
+        }
+      });
+    });
+
+    observer.observe(el);
+
+    return () => {
+      observer.disconnect();
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [delay]);
+
+  const toggleFlipped = () => setFlipped(prev => !prev);
+
+  return {
+    cardRef,
+    flipped,
+    toggleFlipped,
+  };
 }
