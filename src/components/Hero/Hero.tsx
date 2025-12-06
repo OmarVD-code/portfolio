@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./styles/Hero.css";
 
 export default function Hero() {
     const [text1, setFirstLine] = useState("");

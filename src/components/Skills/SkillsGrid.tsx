@@ -1,5 +1,6 @@
 import SkillItem from "./SkillItem";
 import { skills } from "./skills.data";
+import "./styles/Skills.css";
 
 export default function SkillsGrid() {
     return (

@@ -1,4 +1,5 @@
 import ContactForm from "./ContactForm";
+import "./styles/Contact.css";
 
 export default function ContactSection() {
     return (

@@ -1,6 +1,7 @@
 import { useMemo, useState, useCallback, useEffect } from "react";
 import MenuButton from "./MenuButton";
 import { useActiveSection } from "../../hooks/useActiveSection";
+import "./styles/Navbar.css";
 
 const SECTIONS = ["wallpaper_", "about_", "portfolio_", "skillset_", "contact_"] as const;
 type SectionId = (typeof SECTIONS)[number];
