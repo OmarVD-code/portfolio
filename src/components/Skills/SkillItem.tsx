@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
 type Props = {
     title: string;
@@ -6,38 +6,14 @@ type Props = {
 };
 
 export default function SkillItem({ title, items }: Props) {
-    const cardRef = useRef<HTMLDivElement>(null);
-    const [flipped, setFlipped] = useState(true);
-    const autoFlippedRef = useRef(false);
-
-    useEffect(() => {
-        const el = cardRef.current;
-        if (!el) return;
-
-        const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          if (!autoFlippedRef.current) {
-            autoFlippedRef.current = true;
-
-            const timeout = setTimeout(() => {
-              setFlipped(false);
-            }, 600);
-
-            return () => clearTimeout(timeout);
-          }
-        }
-      });
+    const { cardRef, flipped, toggleFlipped } = useRevealOnScroll({
+        delay: 600,
+        initialFlipped: true,
     });
-
-        observer.observe(el);
-
-        return () => observer.disconnect();
-    }, []);
 
     return (
         <div ref={cardRef} className={`project flip-card ${flipped ? "is-flipped" : ""}`}
-            onClick={() => setFlipped(prev => !prev)}>
+            onClick={toggleFlipped}>
             <div className="flip-card-inner">
                 <div className="flip-card-front">
                     <div className="skill-title">{title}</div>

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useFlipOnIntersect(
+export function useRevealOnScroll(
   options?: {
     delay?: number;          // ms antes de revelar
     initialFlipped?: boolean; // true = empieza boca abajo
