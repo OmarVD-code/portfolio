@@ -19,7 +19,7 @@ body {
 .app-wrapper {
     min-height: 100vh;
     min-width: 100vw;
-    background: linear-gradient(135deg, #050018 0%, #2800ff 50%, #6c00ff 100%);
+    background: radial-gradient(circle at top, #4a0000 0%, #0b0b0b 80%);
 }
 
 html::-webkit-scrollbar,
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 }
 
 section {
-    height: 100vh;    
+    height: 100vh;
 }
 
 h1 {
@@ -218,6 +218,7 @@ h1 {
     height: auto;
     border: #222222;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255,0,0,0.35);
 }
 
 .project-header img {

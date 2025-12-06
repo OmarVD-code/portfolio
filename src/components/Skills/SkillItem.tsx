@@ -28,7 +28,7 @@ export default function SkillItem({ title, items }: Props) {
                 </div>
 
                 <div className="flip-card-back">
-                    <img src="src/assets/img/cardbackblue.png" alt="card back" />
+                    <img src="src/assets/img/cardbackblack.png" alt="card back" />
                 </div>
             </div>
         </div>
