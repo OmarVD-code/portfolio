@@ -12,7 +12,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="app-wrapper">
       <Navbar />
       <main>
         <Hero />
@@ -20,7 +20,7 @@ function App() {
         <SkillsGrid />
         <ContactSection />
       </main>
-    </>
+    </div>
   )
 }
 
