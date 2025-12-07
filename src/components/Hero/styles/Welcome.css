@@ -17,11 +17,21 @@
   width: 450px;
   height: 450px;
   background: #EAE7DF;
-  box-shadow: inset 0 0 0 10px #ffCB3A;
-  border: 5px dotted #E6D1b2;
+  box-shadow: inset 0 0 0 15px #ffCB3A;
+  border: 15px solid #000;
   border-top-left-radius: 70px;
   border-bottom-right-radius: 70px;
 }
+
+.sign::after {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border: 10px dotted #ffCB3A;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
 .text {
   position: absolute;
   top: 48%;
@@ -51,7 +61,7 @@
 }
 .text .to {
   position: relative;
-  top: 28px;
+  top: 20px;
   left: -180px;
   font-family: 'Open Sans';
   font-size: 26px;
@@ -59,7 +69,7 @@
 }
 .text .fab {
   position: relative;
-  top: -14px;
+  top: -24px;
   left: 30px;
   font-family: 'Mr Dafoe';
   font-size: 64px;
@@ -69,17 +79,17 @@
 .text .las {
   position: relative;
   top: -20px;
-  left: 8px;
-  font-size: 66px;
+  left: 4px;
+  font-size: 50px;
   font-weight: 600;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: red;
 }
 .text .nv {
   position: relative;
   top: -25px;
   left: 0;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
 }
