@@ -19,7 +19,7 @@ body {
 .app-wrapper {
     min-height: 100vh;
     min-width: 100vw;
-    background: radial-gradient(circle at top, #4a0000 0%, #0b0b0b 80%);
+    background: radial-gradient(circle at top, #0b0b0b 0%, #4a0000 80%);
 }
 
 html::-webkit-scrollbar,
