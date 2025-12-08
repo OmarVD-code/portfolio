@@ -19,7 +19,7 @@ body {
 .app-wrapper {
     min-height: 100vh;
     min-width: 100vw;
-    background: radial-gradient(circle at top, #0b0b0b 0%, #4a0000 80%);
+    background: radial-gradient(circle at top, #000 0%, #4a0000 80%);
 }
 
 html::-webkit-scrollbar,
@@ -79,7 +79,8 @@ h1 {
     inset: 0;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    background-color: var(--semidark);
+    /* background-color: var(--semidark); */
+    background-color: #e4e4c5;
 }
 
 .flip-card-front {

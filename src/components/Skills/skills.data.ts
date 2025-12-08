@@ -2,6 +2,7 @@ export const skills = [
     {
         id: 1,
         title: "Front-end",
+        icon: "src/assets/img/hearts.png",
         items: [
             {
                 name: "TypeScript",
@@ -30,6 +31,7 @@ export const skills = [
     {
         id: 2,
         title: "Back-end",
+        icon: "src/assets/img/clubs.png",
         items: [
             {
                 name: "Node.js",
@@ -60,6 +62,7 @@ export const skills = [
     {
         id: 3,
         title: "Database",
+        icon: "src/assets/img/spades.png",
         items: [
             {
                 name: "MySQL",
@@ -78,6 +81,7 @@ export const skills = [
     {
         id: 4,
         title: "Tools",
+        icon: "src/assets/img/diamonds.png",
         items: [
             {
                 name: "Git",

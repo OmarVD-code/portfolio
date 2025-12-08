@@ -50,7 +50,7 @@ export default function Navbar() {
         <header className="nav">
             <div className="nav-items">
                 <div className="nav-logo">
-                    <p>&lt; <span className="tag">OV</span> /&gt;</p>
+                    <img src="src/assets/img/pokerchip.png" alt="Logo" width="50px" height="50px" />
                 </div>
 
                 <nav className={`nav-menu ${open ? "open" : ""}`}>

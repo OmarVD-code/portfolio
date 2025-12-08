@@ -2,10 +2,11 @@ import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
 type Props = {
     title: string;
+    icon: string;
     items: Array<{ name: string; img: string }>;
 };
 
-export default function SkillItem({ title, items }: Props) {
+export default function SkillItem({ title, icon, items }: Props) {
     const { cardRef, flipped, toggleFlipped } = useRevealOnScroll({
         delay: 600,
         initialFlipped: true,
@@ -16,7 +17,10 @@ export default function SkillItem({ title, items }: Props) {
             onClick={toggleFlipped}>
             <div className="flip-card-inner">
                 <div className="flip-card-front">
-                    <div className="skill-title">{title}</div>
+                    <div className="skill-title">
+                        <span>{title}</span>
+                        <img src={icon} className="poker-symbol" alt="Symbol" />
+                    </div>
                     <div className="skill-body">
                         {items.map((i, idx) =>
                             <div key={idx} className="skill-item">
@@ -24,6 +28,9 @@ export default function SkillItem({ title, items }: Props) {
                                 <p>{i.name}</p>
                             </div>
                         )}
+                    </div>
+                    <div className="skill-footer">
+                        <img src={icon} className="poker-symbol" alt="Symbol" />
                     </div>
                 </div>
 

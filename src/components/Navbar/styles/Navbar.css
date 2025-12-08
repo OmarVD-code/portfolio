@@ -16,6 +16,10 @@
 .nav-logo {
     width: 50%;
     padding-left: 80px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .nav-menu {

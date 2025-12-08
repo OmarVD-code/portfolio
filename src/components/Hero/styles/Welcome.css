@@ -34,10 +34,21 @@
 }
 
 @keyframes blinkdots {
-  0%   { border: 10px dotted #936535; }
-  10%  { border: 10px dotted #ffCB3A; }
-  90%  { border: 10px dotted #ffCB3A; }
-  100% { border: 10px dotted #936535; }
+  0% {
+    border: 10px dotted #936535;
+  }
+
+  10% {
+    border: 10px dotted #ffCB3A;
+  }
+
+  90% {
+    border: 10px dotted #ffCB3A;
+  }
+
+  100% {
+    border: 10px dotted #936535;
+  }
 }
 
 .text {
@@ -58,8 +69,8 @@
   padding: 5px;
   font-size: 30px;
   font-weight: bold;
-  color: #580809;
-  background: #050346;
+  color: #fff;
+  background: #580809;
   border: 4px solid #fff;
   border-radius: 50%;
   box-shadow: 0px 10px 5px #5D646E;
@@ -67,15 +78,26 @@
 }
 
 @keyframes blinkwelcome {
-  0%   { background: #050346; color: #580809; }
-  10%  { background: #0261DF; color: #FF020D; }
-  90%  { background: #0261DF; color: #FF020D; }
-  100% { background: #050346; color: #580809; }
+  0% {
+    background: #050346;
+  }
+
+  10% {
+    background: #0261DF;
+  }
+
+  90% {
+    background: #0261DF;
+  }
+
+  100% {
+    background: #050346;
+  }
 }
 
 .text .to {
   position: relative;
-  top: 20px;
+  top: 24px;
   left: -180px;
   font-family: 'Open Sans';
   font-size: 26px;
@@ -83,9 +105,9 @@
   animation: blinkto 1.5s infinite;
 }
 
-.text .fab {
+.text .my {
   position: relative;
-  top: -24px;
+  top: -20px;
   left: 30px;
   font-family: 'Mr Dafoe';
   font-size: 64px;
@@ -95,15 +117,26 @@
 }
 
 @keyframes blinkto {
-  0%   { color: #050346; }
-  10%  { color: #0261DF; }
-  90%  { color: #0261DF; }
-  100% { color: #050346; }
+  0% {
+    color: #050346;
+  }
+
+  10% {
+    color: #0261DF;
+  }
+
+  90% {
+    color: #0261DF;
+  }
+
+  100% {
+    color: #050346;
+  }
 }
 
 .text .las {
   position: relative;
-  top: -20px;
+  top: -16px;
   left: 4px;
   font-size: 50px;
   font-weight: 600;
@@ -113,18 +146,49 @@
 }
 
 @keyframes blinklas {
-  0%   { color: #580809; }
-  10%  { color: #FF020D; }
-  90%  { color: #FF020D; }
-  100% { color: #580809; }
+  0% {
+    color: #580809;
+  }
+
+  10% {
+    color: #FF020D;
+  }
+
+  90% {
+    color: #FF020D;
+  }
+
+  100% {
+    color: #580809;
+  }
 }
 
 .text .nv {
   position: relative;
-  top: -25px;
+  top: -21px;
   left: 0;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 3px;
   animation: blinkto 1.5s infinite;
+}
+
+.wallpaper-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.wallpaper-buttons a {
+  margin: 0 10px;
+  font-size: 2.5rem;
+  color: #580809;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.wallpaper-buttons a:hover {
+  color: #FF020D;
+}
+
+.wallpaper-buttons img {
+  width: 40px;
 }

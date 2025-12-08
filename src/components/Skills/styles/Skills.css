@@ -17,18 +17,33 @@
 }
 
 .skill-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
     padding: 10px 15px;
-    background-color: #222222 !important;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
 }
 
+.poker-symbol {
+    width: 36px;
+    height: 36px;
+}
 
 .skill-body {
     padding: 25px 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    color: #000;
+}
+
+.skill-footer {
+    display: flex;
+    justify-content: end;
+    bottom: 0;
+    position: absolute;
+    padding: 10px 15px;
 }
 
 .skill-item {

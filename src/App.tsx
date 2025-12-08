@@ -16,7 +16,7 @@ function App() {
     <div className="app-wrapper">
       <Navbar />
       <main>
-        {/* <Hero /> */}
+        {/* <Hero />/ */}
         <Welcome />
         <ProjectsGrid />
         <SkillsGrid />
