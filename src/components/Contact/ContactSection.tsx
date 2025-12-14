@@ -4,7 +4,7 @@ import "./styles/Contact.css";
 export default function ContactSection() {
     return (
         <section id="contact_" className="contact">
-            <h2 className="section-title">Contact</h2>
+            <h1 className="section-title">Contact</h1>
             <div className="contact-content">
                 <div className="contact-form">
                     <ContactForm />

@@ -5,7 +5,7 @@ import "./styles/Skills.css";
 export default function SkillsGrid() {
     return (
         <section id="skillset_" className="skillset">
-            <h2 className="section-title">Skills</h2>
+            <h1 className="section-title">Skills</h1>
             <div className="skills">
                 {skills.map(s => <SkillItem key={s.id} {...s} />)}
             </div>

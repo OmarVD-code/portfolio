@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from "./components/Navbar/Navbar";
 // import Hero from "./components/Hero/Hero";
 import Welcome from "./components/Hero/Welcome";
+import About from "./components/About/About";
 import ProjectsGrid from "./components/Portfolio/ProjectsGrid";
 import SkillsGrid from "./components/Skills/SkillsGrid";
 import ContactSection from "./components/Contact/ContactSection";
@@ -18,6 +19,7 @@ function App() {
       <main>
         {/* <Hero />/ */}
         <Welcome />
+        <About />
         <ProjectsGrid />
         <SkillsGrid />
         <ContactSection />

@@ -9,6 +9,7 @@ type NavItem = { id: SectionId; label: string };
 
 const NAV_ITEMS: NavItem[] = [
     { id: "wallpaper_", label: "Home" },
+    { id: "about_", label: "About Me" },
     { id: "portfolio_", label: "Portfolio" },
     { id: "skillset_", label: "Skills" },
     { id: "contact_", label: "Contact" },
@@ -18,7 +19,6 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
     const activeId = useActiveSection(SECTIONS as unknown as string[]);
 
-    // Bloquea el scroll del body cuando el menú móvil está abierto (UX)
     useEffect(() => {
         if (open) document.body.style.overflow = "hidden";
         else document.body.style.overflow = "";
@@ -36,9 +36,7 @@ export default function Navbar() {
         setOpen(false);
         const el = document.getElementById(id);
         if (!el) return;
-        // Deslizar suave sin necesitar librerías
         el.scrollIntoView({ behavior: "smooth", block: "start" });
-        // Actualiza el hash sin recargar
         history.replaceState(null, "", `#${id}`);
     }, []);
 

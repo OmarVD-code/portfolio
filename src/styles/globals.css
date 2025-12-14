@@ -1,11 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --red: rgb(220, 25, 33);
     --coffee: #8B0000;
-    --semidark: #2c2b2b
-}
+    --semidark: #2c2b2b --velvet-dark: #0f0306;
+    --velvet: #1a0509;
+    --crimson: #8b0014;
+    --emerald: #054d2b;
+    --emerald-deep: #01361c;
+    --ivory: #fff9ec;
+    --ink: #1c1200;
 
-* {
-    box-sizing: border-box;
+    --gold-1: #fff6bf;
+    --gold-2: #ffd76a;
+    --gold-3: #e6a400;
+    --gold-4: #8a5400;
+    --brass: #c59a49;
+
+    --gold-glow: rgba(255, 204, 0, 0.35);
+    --crimson-glow: rgba(139, 0, 20, 0.45);
+    --emerald-glow: rgba(12, 120, 66, 0.35);
+
+    --radius-lg: 24px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
 }
 
 html,
@@ -43,10 +63,57 @@ section {
     font-size: 36px;
     font-weight: bolder;
     margin-bottom: 0;
+    width: 100%;
 }
 
 h1 {
-    margin: 20px 0 !important;
+    position: relative;
+    margin: 50px 0 !important;
+    padding: 18px 22px;
+    font-size: clamp(1.9rem, 3.8vw, 2.6rem);
+    font-variant: small-caps;
+    letter-spacing: 0.12em;
+    text-align: center;
+    background: linear-gradient(180deg, var(--gold-1) 0%, var(--gold-2) 38%, var(--gold-3) 60%, var(--gold-4) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow:
+        0 1px 0 #fff2b9,
+        0 2px 0 #ffd470,
+        0 3px 0 #c78c27,
+        0 0 18px rgba(255, 215, 90, 0.45),
+        0 0 36px rgba(255, 170, 0, 0.25);
+
+    border: 2px solid rgba(255, 219, 112, 0.65);
+    border-radius: var(--radius-md);
+    box-shadow:
+        inset 0 0 18px rgba(255, 219, 112, 0.18),
+        0 0 24px var(--gold-glow);
+    background-color: rgba(40, 10, 0, 0.18);
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    height: 12px;
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 8px 6px, #ffffff 0 22%, #ffd776 23% 48%, #a85a00 49% 70%, transparent 71%) 0 0 / 24px 12px repeat-x,
+        radial-gradient(circle at 8px 6px, rgba(255, 255, 255, 0.5) 0 22%, rgba(255, 215, 118, 0.6) 23% 48%, rgba(168, 90, 0, 0.7) 49% 70%, transparent 71%) 12px 0 / 24px 12px repeat-x;
+    box-shadow: 0 0 16px rgba(255, 190, 70, 0.55);
+}
+
+h1::before {
+    top: -8px;
+}
+
+h1::after {
+    bottom: -8px;
 }
 
 .tag {
