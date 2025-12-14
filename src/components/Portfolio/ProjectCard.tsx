@@ -38,10 +38,12 @@ export default function ProjectCard({ title, desc, img, tools, demo, code }: Pro
                         </div>
                     </div>
                     <div className="project-footer">
-                        <a href={demo} target="_blank" rel="noreferrer">
+                        <a href={demo} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}
+                        >
                             <i className="fas fa-globe-americas" /> <span>Demo</span>
                         </a>
-                        <a href={code} target="_blank" rel="noreferrer">
+                        <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}
+                        >
                             <i className="fab fa-github" /> <span>Code</span>
                         </a>
                     </div>
@@ -53,5 +55,4 @@ export default function ProjectCard({ title, desc, img, tools, demo, code }: Pro
             </div>
         </div>
     );
-
 }
