@@ -14,10 +14,14 @@
     position: relative;
     width: 48vw;
     height: 24vw;
-    background:
+    /* background:
         linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent),
         radial-gradient(120% 90% at 10% 0%, rgba(255, 255, 255, 0.06), transparent 50%),
-        linear-gradient(145deg, #2c2b2b, #0d0406);
+        linear-gradient(145deg, #2c2b2b, #0d0406); */
+        background-image: url("src/assets/img/poker-banner.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     border: 3px solid var(--gold-3);
     border-radius: var(--radius-lg);
     box-shadow:
