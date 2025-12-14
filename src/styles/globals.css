@@ -54,10 +54,6 @@ body::-webkit-scrollbar {
     color: #fff;
 }
 
-section {
-    height: 100vh;
-}
-
 .section-title {
     text-align: center;
     font-size: 36px;
@@ -124,7 +120,7 @@ h1::after {
 .project.flip-card {
     position: relative;
     cursor: pointer;
-    height: 600px;
+    height: 80vh;
     perspective: 1000px;
 }
 
@@ -164,9 +160,9 @@ h1::after {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
     section {
         height: auto;
         margin-bottom: 150px;
     }
-}
+} */

@@ -64,7 +64,6 @@ export default function About() {
                                         <a
                                             href="/cv/omarVillarreal.pdf"
                                             target="_blank"
-                                            download
                                             title="Download CV"
                                             className="cv-icon"
                                         >
