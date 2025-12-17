@@ -3,6 +3,7 @@ import "./styles/Welcome.css";
 export default function Welcome() {
     return (
         <section id="wallpaper_" className="wallpaper">
+            {/* <div className="vegas-star"></div> */}
             <div className="sign"></div>
             <div className="text">
                 <div className="welcome">
