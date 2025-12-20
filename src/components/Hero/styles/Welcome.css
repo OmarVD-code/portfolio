@@ -234,6 +234,49 @@
   animation-delay: 0.40s;
 }
 
+@media (min-width: 320px) and (max-width: 950px) {
+  .sign {
+    width: 200px;
+    height: 200px;
+  }
+
+  .welcome span {
+    width: 36px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .text {
+    top: 52%;
+  }
+
+  .text .to {
+    top: 5px;
+    left: -50px;
+    font-size: 15px;
+  }
+
+  .text .my {
+    top: -30px;
+    left: 20px;
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+
+  .text .las {
+    top: -42px;
+    letter-spacing: 0px;
+    font-size: 18px;
+  }
+
+  .text .nv {
+    top: -45px;
+    left: 0;
+    letter-spacing: 0px;
+    font-size: 9px;
+  }
+}
+
 @media (min-width: 1375px) {
   .sign {
     width: 650px;

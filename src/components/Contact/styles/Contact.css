@@ -48,17 +48,6 @@ form textarea {
     resize: none;
 }
 
-@media (max-width: 950px) {
-    .contact-content {
-        display: block;
-    }
-
-    .contact-content div {
-        width: 100%;
-        margin-bottom: 0;
-    }
-}
-
 .poker-table {
     width: 80vw;
     height: 36vw;
@@ -102,4 +91,18 @@ form textarea {
 
 .table-inner form {
     width: 80%;
+}
+
+@media (max-width: 1200px) {
+    .poker-table {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+    .contact-form form button {        
+        width: 100%;
+        padding: 0.5em;
+    }
+
 }

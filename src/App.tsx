@@ -2,7 +2,6 @@
 import './App.css'
 
 import Navbar from "./components/Navbar/Navbar";
-// import Hero from "./components/Hero/Hero";
 import Welcome from "./components/Hero/Welcome";
 import About from "./components/About/About";
 import ProjectsGrid from "./components/Portfolio/ProjectsGrid";
@@ -16,14 +15,11 @@ function App() {
   return (
     <div className="app-wrapper">
       <Navbar />
-      <main>
-        {/* <Hero />/ */}
-        <Welcome />
-        <About />
-        <ProjectsGrid />
-        <SkillsGrid />
-        <ContactSection />
-      </main>
+      <Welcome />
+      <About />
+      <ProjectsGrid />
+      <SkillsGrid />
+      <ContactSection />
     </div>
   )
 }

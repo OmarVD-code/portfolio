@@ -8,8 +8,8 @@
     --semidark: #2c2b2b --velvet-dark: #0f0306;
     --velvet: #1a0509;
     --crimson: #8b0014;
-    --emerald: #054d2b;
-    --emerald-deep: #01361c;
+    --platinum: #1b1a1a;
+    --platinum-deep: #4e4c4c;
     --ivory: #fff9ec;
     --ink: #1c1200;
 
@@ -21,7 +21,7 @@
 
     --gold-glow: rgba(255, 204, 0, 0.35);
     --crimson-glow: rgba(139, 0, 20, 0.45);
-    --emerald-glow: rgba(12, 120, 66, 0.35);
+    --platinum-glow: rgba(32, 32, 32, 0.35);
 
     --radius-lg: 24px;
     --radius-md: 14px;
@@ -30,16 +30,11 @@
 
 html,
 body {
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     scrollbar-width: none;
     margin: 0;
     padding: 0;
-}
-
-.app-wrapper {
-    min-height: 100vh;
-    min-width: 100vw;
-    /* background: radial-gradient(circle at top, #000 0%, #4a0000 80%); */
     background:
         radial-gradient(circle at 50% 40%, rgba(0, 140, 255, 0.12), transparent 55%),
         radial-gradient(circle at 20% 80%, rgba(255, 0, 120, 0.10), transparent 50%),
@@ -53,8 +48,11 @@ body::-webkit-scrollbar {
 }
 
 #root {
+    width: 100%;
+    min-height: 100dvh;
     margin: 0;
     padding: 0;
+    max-width: none;
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
@@ -165,9 +163,12 @@ h1::after {
 }
 
 /* RESPONSIVE DESIGN */
-/* @media (max-width: 950px) {
-    section {
-        height: auto;
-        margin-bottom: 150px;
+@media (min-width: 320px) and (max-width: 750px) {
+    .about, .portfolio, .skillset, .contact {
+        padding: 0 25px;
     }
-} */
+
+    h1 {
+        font-size: 30px !important;
+    }
+}
