@@ -50,7 +50,7 @@
     text-align: center;
 }
 
-@media (max-width: 1375px) {
+@media (max-width: 1275px) {
     .skillset {
         height: auto;
     }
