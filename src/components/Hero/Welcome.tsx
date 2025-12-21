@@ -3,7 +3,6 @@ import "./styles/Welcome.css";
 export default function Welcome() {
     return (
         <section id="wallpaper_" className="wallpaper">
-            {/* <div className="vegas-star"></div> */}
             <div className="sign"></div>
             <div className="text">
                 <div className="welcome">
@@ -19,8 +18,15 @@ export default function Welcome() {
                     <span>TO</span>
                 </div>
                 <div className="my">My Portfolio</div>
-                <div className="las">OMAR VILLARREAL</div>
-                <div className="nv">SOFTWARE DEVELOPER</div>
+                <div className="las">OMAR <br className="breaker" /> VILLARREAL</div>
+                <div className="nv">SOFTWARE <br className="breaker" /> DEVELOPER</div>
+                <img
+                    className="photo"
+                    src="src/assets/img/photo.jpg"
+                    alt="Me"
+                    width="200px"
+                    height="200px"
+                />
             </div>
         </section>
     )
