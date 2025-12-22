@@ -7,6 +7,7 @@ export default function SkillsDice() {
     const [rolling, setRolling] = useState(false);
     const [diceType, setDiceType] = useState("");
     const [diceVal, setDiceVal] = useState<number | null>(null);
+    const [showAll, setShowAll] = useState(false); // false = dice mode
 
     const perFace = [
         [-0.1, 0.3, -1],
@@ -39,49 +40,76 @@ export default function SkillsDice() {
         }, 700);
     };
 
+    const toggleView = () => setShowAll((prev) => !prev);
 
     return (
         <section id="skillset_" className="skill-dice">
             <h1 className="section-title">Skills</h1>
-            <div className="diceWrap">
-                <div
-                    ref={diceRef}
-                    className={`dice ${rolling ? "rolling" : ""} ${diceType}`}
-                    onClick={rollDice}
-                >
-                    {skills.map((skill) => (
-                        <div key={skill.id} className={`diceFace ${skill.face}`}>
-                            <div className="faceContent">
-                                <h3 className="faceTitle">{skill.title}</h3>
+            {!showAll && (
+                <div className="diceWrap">
+                    <div
+                        ref={diceRef}
+                        className={`dice ${rolling ? "rolling" : ""} ${diceType}`}
+                        onClick={rollDice}
+                    >
+                        {skills.map((skill) => (
+                            <div key={skill.id} className={`diceFace ${skill.face}`}>
+                                <div className="faceContent">
+                                    <h3 className="faceTitle">{skill.title}</h3>
 
-                                <div className="faceIcons">
-                                    {skill.items.map((item, index) => (
-                                        <img
-                                            key={index}
-                                            src={item.img}
-                                            alt={item.name}
-                                            title={item.name}
-                                        />
-                                    ))}
+                                    <div className="faceIcons">
+                                        {skill.items.map((item, index) => (
+                                            <img
+                                                key={index}
+                                                src={item.img}
+                                                alt={item.name}
+                                                title={item.name}
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            {showAll && (
+                <div className="listWrap">
+                    {skills.map((skill) => (
+                        <div key={skill.id} className="listContainer">
+                            <div className="listFace">
+                                <div className="faceContent">
+                                    <h3 className="faceTitle">{skill.title}</h3>
+
+                                    <div className="faceIcons">
+                                        {skill.items.map((item, index) => (
+                                            <img
+                                                key={index}
+                                                src={item.img}
+                                                alt={item.name}
+                                                title={item.name}
+                                            />
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
-            </div>
+            )}
 
             <div className="controller">
-                <button onClick={rollDice}>Roll</button>
-                {/* <span> {diceVal}</span> */}
+                <button onClick={rollDice} disabled={showAll}>Roll</button>
                 <br />
 
-                <select onChange={(e) => setDiceType(e.target.value)}>
+                <select onChange={(e) => setDiceType(e.target.value)} disabled={showAll}>
                     <option value="">white</option>
                     <option value="black">black</option>
                 </select>
-                
                 <br />
-                <button>Show All</button>
+
+                <button onClick={toggleView}>{showAll ? "Dice Mode" : "Show All"}</button>
             </div>
         </section>
     );

@@ -69,15 +69,17 @@ body {
 .faceContent {
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
     gap: 14px;
     padding: 20px;
     text-align: center;
+    justify-content: center;
+}
+
+.faceContent.dice-mode {
+    justify-content: center;
 }
 
 .faceTitle {
@@ -89,7 +91,7 @@ body {
 
 .faceIcons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(36px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 18px;
     width: 100%;
     max-width: 180px;
@@ -147,6 +149,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
+    width: 150px;
 }
 
 .controller select {
@@ -178,4 +181,30 @@ body {
     40% {
         margin-top: 0;
     }
+}
+
+.listWrap {
+    width: 95%;
+    display: grid;
+    align-items: center;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.listFace {
+    width: 250px;
+    height: 250px;
+    background: #f6f3f0;
+    color: #111;
+    border-radius: 16px;
+    box-shadow:
+        inset 0 2px 6px rgba(255, 255, 255, 0.6),
+        inset 0 -4px 8px rgba(0, 0, 0, 0.15),
+        0 12px 24px rgba(0, 0, 0, 0.35);
+    position: relative;
 }
