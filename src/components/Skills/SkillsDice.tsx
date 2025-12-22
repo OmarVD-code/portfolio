@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "./styles/Dice.css";
+import { skills } from "./skills.data";
 
 export default function SkillsDice() {
     const diceRef = useRef<HTMLDivElement | null>(null);
@@ -46,13 +47,26 @@ export default function SkillsDice() {
                 <div
                     ref={diceRef}
                     className={`dice ${rolling ? "rolling" : ""} ${diceType}`}
+                    onClick={rollDice}
                 >
-                    <div className="diceFace front">Front-end</div>
-                    <div className="diceFace up">Back-end</div>
-                    <div className="diceFace left">Database</div>
-                    <div className="diceFace right">Deploy</div>
-                    <div className="diceFace bottom">Languages</div>
-                    <div className="diceFace back">Tools</div>
+                    {skills.map((skill) => (
+                        <div key={skill.id} className={`diceFace ${skill.face}`}>
+                            <div className="faceContent">
+                                <h3 className="faceTitle">{skill.title}</h3>
+
+                                <div className="faceIcons">
+                                    {skill.items.map((item, index) => (
+                                        <img
+                                            key={index}
+                                            src={item.img}
+                                            alt={item.name}
+                                            title={item.name}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
 

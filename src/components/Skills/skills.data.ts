@@ -2,7 +2,7 @@ export const skills = [
     {
         id: 1,
         title: "Front-end",
-        // icon: "src/assets/img/hearts.png",
+        face: "front",
         items: [
             {
                 name: "TypeScript",
@@ -31,7 +31,7 @@ export const skills = [
     {
         id: 2,
         title: "Back-end",
-        // icon: "src/assets/img/clubs.png",
+        face: "up",
         items: [
             {
                 name: "Node.js",
@@ -62,7 +62,7 @@ export const skills = [
     {
         id: 3,
         title: "Database",
-        // icon: "src/assets/img/spades.png",
+        face: "left",
         items: [
             {
                 name: "MySQL",
@@ -80,16 +80,54 @@ export const skills = [
     },
     {
         id: 4,
+        title: "DevOps",
+        face: "right",
+        items: [
+            {
+                name: "Docker",
+                img: "src/assets/img/docker-original.svg"
+            },
+            {
+                name: "AWS",
+                img: "src/assets/img/amazonwebservices-original-wordmark.svg"
+            }
+        ]
+    },
+    {
+        id: 5,
         title: "Tools",
-        // icon: "src/assets/img/diamonds.png",
+        face: "bottom",
         items: [
             {
                 name: "Git",
                 img: "src/assets/img/git-original.svg"
             },
             {
-                name: "Docker",
-                img: "src/assets/img/docker-original.svg"
+                name: "GitHub",
+                img: "src/assets/img/github-original.svg"
+            },
+            {
+                name: "Visual Studio Code",
+                img: "src/assets/img/vscode-original.svg"
+            },
+            {
+                name: "npm",
+                img: "src/assets/img/npm-original-wordmark.svg"
+            },
+        ]
+    },
+    {
+        id: 6,
+        title: "Languages",
+        face: "back",
+        items: [
+            {
+                name: "Spanish",
+                img: "src/assets/img/es.svg"
+            },
+            {
+                name: "English",
+                img: "src/assets/img/gb.svg"
             },
         ]
     },
