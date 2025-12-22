@@ -72,14 +72,16 @@ export default function SkillsDice() {
 
             <div className="controller">
                 <button onClick={rollDice}>Roll</button>
-                <span> {diceVal}</span>
+                {/* <span> {diceVal}</span> */}
                 <br />
 
-                diceType:
                 <select onChange={(e) => setDiceType(e.target.value)}>
-                    <option value="">default</option>
+                    <option value="">white</option>
                     <option value="black">black</option>
                 </select>
+                
+                <br />
+                <button>Show All</button>
             </div>
         </section>
     );
