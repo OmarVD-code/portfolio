@@ -225,26 +225,26 @@
 
   .text .to {
     top: 24px;
-    left: -180px;
+    left: -150px;
     font-size: 26px;
   }
 
   .text .my {
     top: -20px;
     left: 30px;
-    font-size: 64px;
+    font-size: 50px;
     letter-spacing: 5px;
   }
 
   .text .las {
-    top: -16px;
+    top: -25px;
     left: 4px;
-    font-size: 50px;
-    letter-spacing: 3px;
+    font-size: 60px;
+    letter-spacing: -3px;
   }
 
   .text .nv {
-    top: -15px;
+    top: -25px;
     left: 0;
     font-size: 24px;
     letter-spacing: 3px;
@@ -283,8 +283,8 @@
   .text .las {
     top: 10px;
     left: 4px;
-    font-size: 64px;
-    letter-spacing: 6px;
+    font-size: 85px;
+    letter-spacing: 0px;
   }
 
   .text .nv {
@@ -327,8 +327,8 @@
   .text .las {
     top: 20px;
     left: 4px;
-    font-size: 75px;
-    letter-spacing: 9px;
+    font-size: 100px;
+    letter-spacing: 2px;
   }
 
   .text .nv {
