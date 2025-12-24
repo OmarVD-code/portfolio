@@ -33,6 +33,7 @@
     text-transform: uppercase;
     padding: 1em;
     width: 50%;
+    font-weight: bolder;
 }
 
 .contact-form form button:hover,
@@ -93,6 +94,21 @@ form textarea {
     width: 80%;
 }
 
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #FFD27D;
+
+    text-shadow:
+        0 0 8px rgba(255, 170, 0, 0.8),
+        0 0 18px rgba(255, 140, 0, 0.4);
+}
+
 @media (max-width: 1200px) {
     .poker-table {
         height: 60vh;
@@ -112,6 +128,15 @@ form textarea {
 
     .table-inner form {
         line-height: 1;
+    }
+
+    .field {
+        margin-bottom: 15px;
+    }
+
+    .field label {
         font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
     }
 }
