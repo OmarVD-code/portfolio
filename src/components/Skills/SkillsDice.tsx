@@ -46,18 +46,18 @@ export default function SkillsDice() {
         <section id="skillset_" className="skill-dice">
             <h1 className="section-title">Skills</h1>
             {!showAll && (
-                <div className="diceWrap">
+                <div className="dice-wrap">
                     <div
                         ref={diceRef}
                         className={`dice ${rolling ? "rolling" : ""} ${diceType}`}
                         onClick={rollDice}
                     >
                         {skills.map((skill) => (
-                            <div key={skill.id} className={`diceFace ${skill.face}`}>
-                                <div className="faceContent">
-                                    <h3 className="faceTitle">{skill.title}</h3>
+                            <div key={skill.id} className={`dice-face ${skill.face}`}>
+                                <div className="face-content">
+                                    <h3 className="face-title">{skill.title}</h3>
 
-                                    <div className="faceIcons">
+                                    <div className="face-icons">
                                         {skill.items.map((item, index) => (
                                             <img
                                                 key={index}
@@ -75,14 +75,14 @@ export default function SkillsDice() {
             )}
 
             {showAll && (
-                <div className="listWrap">
+                <div className="list-wrap">
                     {skills.map((skill) => (
-                        <div key={skill.id} className="listContainer">
-                            <div className="listFace">
-                                <div className="faceContent">
-                                    <h3 className="faceTitle">{skill.title}</h3>
+                        <div key={skill.id} className="list-container">
+                            <div className="list-face">
+                                <div className="face-content">
+                                    <h3 className="face-title">{skill.title}</h3>
 
-                                    <div className="faceIcons">
+                                    <div className="face-icons">
                                         {skill.items.map((item, index) => (
                                             <img
                                                 key={index}
@@ -103,7 +103,7 @@ export default function SkillsDice() {
                 <button onClick={rollDice} disabled={showAll}>Roll</button>
                 <br />
 
-                <select onChange={(e) => setDiceType(e.target.value)} disabled={showAll}>
+                <select onChange={(e) => setDiceType(e.target.value)}>
                     <option value="">white</option>
                     <option value="black">black</option>
                 </select>

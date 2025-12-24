@@ -9,7 +9,7 @@ body {
     margin-bottom: 20vh;
 }
 
-.diceWrap {
+.dice-wrap {
     --s: 320px;
     position: absolute;
     width: calc(var(--s) * 2);
@@ -20,7 +20,7 @@ body {
     perspective: 900px;
 }
 
-.diceWrap::before {
+.dice-wrap::before {
     content: "";
     position: absolute;
     width: 70%;
@@ -52,7 +52,7 @@ body {
     animation: rotateDice 0.7s ease-in reverse, throwDice 1s linear;
 }
 
-.diceFace {
+.dice-face {
     position: absolute;
     width: var(--s);
     height: var(--s);
@@ -66,7 +66,7 @@ body {
     align-items: center;
 }
 
-.faceContent {
+.face-content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -78,18 +78,18 @@ body {
     justify-content: center;
 }
 
-.faceContent.dice-mode {
+.face-content.dice-mode {
     justify-content: center;
 }
 
-.faceTitle {
+.face-title {
     font-size: 18px;
     font-weight: 700;
     margin: 0;
     color: #111;
 }
 
-.faceIcons {
+.face-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 18px;
@@ -97,7 +97,7 @@ body {
     max-width: 180px;
 }
 
-.faceIcons img {
+.face-icons img {
     width: 48px;
     height: 48px;
     object-fit: contain;
@@ -130,12 +130,12 @@ body {
 }
 
 /* Colors */
-.dice.black .diceFace {
+.dice.black .dice-face {
     background: #111;
     border: 2px solid #504e4e;
 }
 
-.dice.black .diceFace .faceTitle {
+.dice.black .dice-face .face-title {
     color: #fff;
 }
 
@@ -183,7 +183,7 @@ body {
     }
 }
 
-.listWrap {
+.list-wrap {
     width: 95%;
     display: grid;
     align-items: center;
@@ -191,12 +191,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.listContainer {
+.list-container {
     display: flex;
     justify-content: center;
 }
 
-.listFace {
+.list-face {
     width: 250px;
     height: 250px;
     background: #f6f3f0;
