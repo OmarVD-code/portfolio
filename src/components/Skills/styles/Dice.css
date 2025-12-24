@@ -130,12 +130,14 @@ body {
 }
 
 /* Colors */
-.dice.black .dice-face {
+.dice.black .dice-face,
+.list-face.black {
     background: #111;
     border: 2px solid #504e4e;
 }
 
-.dice.black .dice-face .face-title {
+.dice.black .dice-face .face-title,
+.list-face.black .face-title {
     color: #fff;
 }
 
@@ -184,23 +186,23 @@ body {
 }
 
 .list-wrap {
-    width: 95%;
-    display: grid;
-    align-items: center;
-    gap: 25px;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 0 200px;
 }
 
 .list-container {
     display: flex;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 25px;
 }
 
 .list-face {
     width: 250px;
     height: 250px;
     background: #f6f3f0;
-    color: #111;
     border-radius: 16px;
     box-shadow:
         inset 0 2px 6px rgba(255, 255, 255, 0.6),

@@ -71,16 +71,16 @@ export default function SkillsDice() {
 
             {showAll && (
                 <div className="list-wrap">
-                    {skills.map((skill) => (
-                        <div key={skill.id} className="list-container">
-                            <div className="list-face">
+                    <div className="list-container">
+                        {skills.map((skill) => (
+                            <div key={skill.id} className={`list-face ${diceType}`}>
                                 <DiceFace
                                     title={skill.title}
                                     items={skill.items}
                                 />
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             )}
 
