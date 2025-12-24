@@ -71,9 +71,9 @@ export default function SkillsDice() {
 
             {showAll && (
                 <div className="list-wrap">
-                    <div className="list-container">
+                    <div className={`list ${diceType}`}>
                         {skills.map((skill) => (
-                            <div key={skill.id} className={`list-face ${diceType}`}>
+                            <div key={skill.id} className="list-face">
                                 <DiceFace
                                     title={skill.title}
                                     items={skill.items}

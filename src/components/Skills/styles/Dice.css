@@ -131,13 +131,13 @@ body {
 
 /* Colors */
 .dice.black .dice-face,
-.list-face.black {
+.list.black .list-face {
     background: #111;
     border: 2px solid #504e4e;
 }
 
 .dice.black .dice-face .face-title,
-.list-face.black .face-title {
+.list.black .list-face .face-title {
     color: #fff;
 }
 
@@ -190,7 +190,7 @@ body {
     padding: 0 200px;
 }
 
-.list-container {
+.list {
     display: flex;
     justify-content: center;
     display: grid;
