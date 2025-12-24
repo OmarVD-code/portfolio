@@ -15,12 +15,14 @@ export default function FaceContent({ title, items }: FaceContentProps) {
 
             <div className="face-icons">
                 {items.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.img}
-                        alt={item.name}
-                        title={item.name}
-                    />
+                    <div key={index}
+                    >
+                        <img
+                            src={item.img}
+                            alt={item.name}
+                            title={item.name}
+                        />
+                    </div>
                 ))}
             </div>
         </div>

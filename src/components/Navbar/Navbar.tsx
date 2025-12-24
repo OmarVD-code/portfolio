@@ -32,7 +32,6 @@ export default function Navbar() {
 
 
     const handleNavigate = useCallback((id: string) => {
-        console.log("handleNavigate", id);
         setOpen(false);
         const el = document.getElementById(id);
         if (!el) return;
