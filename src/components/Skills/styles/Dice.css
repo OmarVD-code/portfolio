@@ -267,6 +267,8 @@ body {
     .list-wrap {
         padding: 0 10px;
         height: 60vh;
+        display: flex;
+        justify-content: center;
         overflow-y: auto;
     }
 
@@ -302,7 +304,6 @@ body {
         height: auto;
         overflow-y: hidden;
     }
-
 }
 
 

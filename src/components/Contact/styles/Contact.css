@@ -99,7 +99,7 @@ form textarea {
     }
 }
 
-@media (min-width: 320px) and (max-width: 950px) {
+@media (max-width: 950px) {
     .contact-form form button {
         width: 100%;
         padding: 0.5em;
@@ -108,5 +108,10 @@ form textarea {
     .contact-form form input,
     .contact-form form textarea {
         padding: 0;
+    }
+
+    .table-inner form {
+        line-height: 1;
+        font-size: 15px;
     }
 }
