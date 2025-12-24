@@ -36,8 +36,11 @@ export default function SkillsDice() {
         setFace(val);
 
         setTimeout(() => {
-            if (!diceRef.current) return;
-            diceRef.current.classList.add("throw");
+            const el = diceRef.current;
+            if (!el) return;
+            el.classList.remove("throw");
+            void el.offsetWidth;
+            el.classList.add("throw");
         }, 50);
 
         setTimeout(() => {
