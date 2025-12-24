@@ -1,4 +1,8 @@
 import { useRef, useState } from "react";
+
+import DiceFace from "./DiceFace";
+import DiceController from "./DiceController";
+
 import "./styles/Dice.css";
 import { skills } from "./skills.data";
 
@@ -27,6 +31,7 @@ export default function SkillsDice() {
         const val = Math.floor(Math.random() * 6) + 1;
 
         setDiceVal(null);
+        console.log(diceVal);
         setRolling(false);
         setFace(val);
 
@@ -54,20 +59,10 @@ export default function SkillsDice() {
                     >
                         {skills.map((skill) => (
                             <div key={skill.id} className={`dice-face ${skill.face}`}>
-                                <div className="face-content">
-                                    <h3 className="face-title">{skill.title}</h3>
-
-                                    <div className="face-icons">
-                                        {skill.items.map((item, index) => (
-                                            <img
-                                                key={index}
-                                                src={item.img}
-                                                alt={item.name}
-                                                title={item.name}
-                                            />
-                                        ))}
-                                    </div>
-                                </div>
+                                <DiceFace
+                                    title={skill.title}
+                                    items={skill.items}
+                                />
                             </div>
                         ))}
                     </div>
@@ -79,38 +74,23 @@ export default function SkillsDice() {
                     {skills.map((skill) => (
                         <div key={skill.id} className="list-container">
                             <div className="list-face">
-                                <div className="face-content">
-                                    <h3 className="face-title">{skill.title}</h3>
-
-                                    <div className="face-icons">
-                                        {skill.items.map((item, index) => (
-                                            <img
-                                                key={index}
-                                                src={item.img}
-                                                alt={item.name}
-                                                title={item.name}
-                                            />
-                                        ))}
-                                    </div>
-                                </div>
+                                <DiceFace
+                                    title={skill.title}
+                                    items={skill.items}
+                                />
                             </div>
                         </div>
                     ))}
                 </div>
             )}
 
-            <div className="controller">
-                <button onClick={rollDice} disabled={showAll}>Roll</button>
-                <br />
-
-                <select onChange={(e) => setDiceType(e.target.value)}>
-                    <option value="">white</option>
-                    <option value="black">black</option>
-                </select>
-                <br />
-
-                <button onClick={toggleView}>{showAll ? "Dice Mode" : "Show All"}</button>
-            </div>
+            <DiceController
+                showAll={showAll}
+                onRoll={rollDice}
+                diceType={diceType}
+                onChangeDiceType={setDiceType}
+                onToggleView={toggleView}
+            />
         </section>
     );
 }

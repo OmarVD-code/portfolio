@@ -84,12 +84,12 @@ export const skills = [
         face: "right",
         items: [
             {
-                name: "Docker",
-                img: "src/assets/img/docker-original.svg"
-            },
-            {
                 name: "AWS",
                 img: "src/assets/img/amazonwebservices-original-wordmark.svg"
+            },
+            {
+                name: "Docker",
+                img: "src/assets/img/docker-original.svg"
             }
         ]
     },
