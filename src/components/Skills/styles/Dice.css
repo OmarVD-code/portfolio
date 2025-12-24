@@ -330,6 +330,10 @@ body {
 }
 
 @media (min-width: 1450px) {
+    .list-wrap {
+        padding: 0 300px;
+    }
+
     .dice-wrap {
         --s: 400px;
     }
