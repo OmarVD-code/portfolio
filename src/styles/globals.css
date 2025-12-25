@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
     max-width: none;
-    font-family: 'Playfair Display', serif;;
+    font-family: 'Playfair Display', serif;
     color: #fff;
 }
 
@@ -85,7 +85,6 @@ body::-webkit-scrollbar {
     background: rgb(37, 36, 36);
     padding: 8px 12px;
     text-align: center;
-    font-size: 36px;
     font-weight: 900;
 }
 
@@ -117,11 +116,25 @@ body::-webkit-scrollbar {
 
 /* RESPONSIVE DESIGN */
 @media (min-width: 320px) and (max-width: 750px) {
-
     .about,
     .portfolio,
     .skill-dice,
     .contact {
-        padding: 0 25px;
+        padding: 80px 25px;
+    }
+
+    .header-container {
+        border-width: 8px;
+        border-radius: 4px;
+        margin: 20px 0;
+    }
+
+    .section-header {
+        padding: 4px 6px;
+        font-weight: 750;
+    }
+
+    .section-header .line {
+        font-size: 24px;
     }
 }

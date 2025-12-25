@@ -8,7 +8,7 @@ const SYMBOLS: SymbolType[] = ["cv", "github", "linkedin"];
 export default function About() {
     const leverOuterRef = useRef<HTMLDivElement | null>(null);
 
-    const [message, setMessage] = useState("Get to know me");
+    const [message, setMessage] = useState("Spin to know me");
     const [reels, setReels] = useState<SymbolType[]>([
         "cv",
         "github",
