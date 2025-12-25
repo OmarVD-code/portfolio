@@ -64,33 +64,39 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
     max-width: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;;
     color: #fff;
+}
+
+.header-container {
+    background: #FF020D;
+    border: 12px dotted #f1ee06;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow:
+        0 0 20px rgba(255, 0, 0, 0.6),
+        0 0 40px rgba(255, 0, 0, 0.4);
+    margin-bottom: 20px;
 }
 
 .section-header {
     display: block;
-    margin: 8px auto 18px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-    border: 12px double var(--neon2);
-    width: 100%;
-    border-radius: 8px;
+    background: rgb(37, 36, 36);
     padding: 8px 12px;
-    overflow: hidden;
     text-align: center;
     font-size: 36px;
-    font-weight: bolder;
-    margin-bottom: 20px;
+    font-weight: 900;
 }
 
 .section-header .line {
     display: inline-block;
     white-space: nowrap;
     animation: scroll-left 15s linear infinite;
-    font-family: 'Press Start 2P';
+    font-family: 'Cinzel', serif;
     font-size: 36px;
-    color: var(--neon1);
-    text-shadow: 0 0 8px rgba(0, 247, 255, 0.8);
+    color: #f1ee06;
+    text-shadow: 0 0 8px rgba(236, 221, 11, 0.8);
     padding-right: 6vw;
 }
 
@@ -111,6 +117,7 @@ body::-webkit-scrollbar {
 
 /* RESPONSIVE DESIGN */
 @media (min-width: 320px) and (max-width: 750px) {
+
     .about,
     .portfolio,
     .skill-dice,

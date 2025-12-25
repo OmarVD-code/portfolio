@@ -14,7 +14,7 @@ body {
     position: absolute;
     width: calc(var(--s) * 2);
     height: calc(var(--s) * 2);
-    top: 18%;
+    top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
     perspective: 900px;
