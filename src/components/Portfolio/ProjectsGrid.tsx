@@ -5,7 +5,9 @@ import "./styles/Project.css";
 export default function ProjectsGrid() {
     return (
         <section id="portfolio_" className="portfolio">
-            <h1 className="section-title">Portfolio</h1>
+            <div className="section-header" aria-hidden="true">
+                <div className="line">★ HERE ARE SOME PROJECTS I'VE WORKED ON ★ &nbsp;</div>
+            </div>
             <div className="projects">
                 {projects.map(p => (
                     <ProjectCard key={p.id} {...p} />

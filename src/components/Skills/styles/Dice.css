@@ -4,7 +4,7 @@ body {
 
 .skill-dice {
     position: relative;
-    padding: 0 75px;
+    padding: 80px;
     height: 100vh;
     margin-bottom: 20vh;
 }
@@ -14,7 +14,7 @@ body {
     position: absolute;
     width: calc(var(--s) * 2);
     height: calc(var(--s) * 2);
-    top: 15%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     perspective: 900px;

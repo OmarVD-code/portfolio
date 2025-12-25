@@ -1,6 +1,7 @@
 .about {
-    padding: 0 75px;
+    padding: 80px;
     height: 100vh;
+    margin-bottom: 20vh;
 }
 
 .machine-wrapper {
@@ -279,7 +280,7 @@
 
     .reel {
         width: 70px;
-        height: 70px;        
+        height: 70px;
     }
 
     .reel a {

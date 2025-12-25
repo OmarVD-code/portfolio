@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -26,7 +28,16 @@
     --radius-lg: 24px;
     --radius-md: 14px;
     --radius-sm: 10px;
+
+    --bg1: #0b1020;
+    --bg2: #2b0b3a;
+    --neon1: #00f7ff;
+    --neon2: #ff00e6;
+    --accent: #ffd24d;
+    --glass: rgba(255, 255, 255, 0.06)
 }
+
+
 
 html,
 body {
@@ -57,62 +68,40 @@ body::-webkit-scrollbar {
     color: #fff;
 }
 
-.section-title {
+.section-header {
+    display: block;
+    margin: 8px auto 18px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 12px double var(--neon2);
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 12px;
+    overflow: hidden;
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
-    margin-bottom: 0;
-    width: 100%;
+    margin-bottom: 20px;
 }
 
-h1 {
-    position: relative;
-    margin: 50px 0 !important;
-    padding: 18px 22px;
-    font-size: clamp(1.9rem, 3.8vw, 2.6rem);
-    font-variant: small-caps;
-    letter-spacing: 0.12em;
-    text-align: center;
-    background: linear-gradient(180deg, var(--gold-1) 0%, var(--gold-2) 38%, var(--gold-3) 60%, var(--gold-4) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-    text-shadow:
-        0 1px 0 #fff2b9,
-        0 2px 0 #ffd470,
-        0 3px 0 #c78c27,
-        0 0 18px rgba(255, 215, 90, 0.45),
-        0 0 36px rgba(255, 170, 0, 0.25);
-
-    border: 2px solid rgba(255, 219, 112, 0.65);
-    border-radius: var(--radius-md);
-    box-shadow:
-        inset 0 0 18px rgba(255, 219, 112, 0.18),
-        0 0 24px var(--gold-glow);
-    background-color: rgba(40, 10, 0, 0.18);
+.section-header .line {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+    font-family: 'Press Start 2P';
+    font-size: 36px;
+    color: var(--neon1);
+    text-shadow: 0 0 8px rgba(0, 247, 255, 0.8);
+    padding-right: 6vw;
 }
 
-h1::before,
-h1::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    height: 12px;
-    border-radius: 8px;
-    background:
-        radial-gradient(circle at 8px 6px, #ffffff 0 22%, #ffd776 23% 48%, #a85a00 49% 70%, transparent 71%) 0 0 / 24px 12px repeat-x,
-        radial-gradient(circle at 8px 6px, rgba(255, 255, 255, 0.5) 0 22%, rgba(255, 215, 118, 0.6) 23% 48%, rgba(168, 90, 0, 0.7) 49% 70%, transparent 71%) 12px 0 / 24px 12px repeat-x;
-    box-shadow: 0 0 16px rgba(255, 190, 70, 0.55);
-}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
 
-h1::before {
-    top: -8px;
-}
-
-h1::after {
-    bottom: -8px;
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .tag {
@@ -122,11 +111,10 @@ h1::after {
 
 /* RESPONSIVE DESIGN */
 @media (min-width: 320px) and (max-width: 750px) {
-    .about, .portfolio, .skill-dice, .contact {
+    .about,
+    .portfolio,
+    .skill-dice,
+    .contact {
         padding: 0 25px;
-    }
-
-    h1 {
-        font-size: 30px !important;
     }
 }

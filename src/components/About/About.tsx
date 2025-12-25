@@ -47,7 +47,9 @@ export default function About() {
 
     return (
         <section id="about_" className="about">
-            <h1 className="section-title">About Me</h1>
+            <div className="section-header" aria-hidden="true">
+                <div className="line">★ PULL THE LEVER TO EXPLORE MY SOCIAL MEDIA ★ &nbsp;</div>
+            </div>
 
             <div className="machine-wrapper">
                 <div className="slot-machine" role="application" aria-label="Slot Machine">

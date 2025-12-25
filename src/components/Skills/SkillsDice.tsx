@@ -51,8 +51,10 @@ export default function SkillsDice() {
     const toggleView = () => setShowAll((prev) => !prev);
 
     return (
-        <section id="skillset_" className="skill-dice">
-            <h1 className="section-title">Skills</h1>
+        <section id="skillset_" className="skill-dice">            
+            <div className="section-header" aria-hidden="true">
+                <div className="line">★ ROLL THE DICE OR USE THE CONTROL PANEL TO EXPLORE MY SKILLS. ★ &nbsp;</div>
+            </div>
             {!showAll && (
                 <div className="dice-wrap">
                     <div
