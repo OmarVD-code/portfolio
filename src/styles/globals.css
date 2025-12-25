@@ -69,20 +69,20 @@ body::-webkit-scrollbar {
 }
 
 .header-container {
-    background: #FF020D;
-    border: 12px dotted #f1ee06;
+    background: #4b0d12;
+    border: 12px dotted #fff1c6;
     border-radius: 8px;
     width: 100%;
     overflow: hidden;
     box-shadow:
-        0 0 20px rgba(255, 0, 0, 0.6),
-        0 0 40px rgba(255, 0, 0, 0.4);
+        0 0 20px #4b0d12,
+        0 0 40px #72121a;
     margin-bottom: 20px;
 }
 
 .section-header {
     display: block;
-    background: rgb(37, 36, 36);
+    background: #0b0b0d;
     padding: 8px 12px;
     text-align: center;
     font-weight: 900;
@@ -94,8 +94,8 @@ body::-webkit-scrollbar {
     animation: scroll-left 15s linear infinite;
     font-family: 'Cinzel', serif;
     font-size: 36px;
-    color: #f1ee06;
-    text-shadow: 0 0 8px rgba(236, 221, 11, 0.8);
+    color: #e7c77a;
+    text-shadow: 0 0 8px #e7c77a;
     padding-right: 6vw;
 }
 
