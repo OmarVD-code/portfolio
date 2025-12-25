@@ -1,6 +1,7 @@
 .portfolio {
     padding: 80px;
     margin-bottom: 20vh;
+    font-family: Roboto, sans-serif;
 }
 
 .projects {
@@ -13,7 +14,6 @@
     width: 100%;
     height: auto;
     border: #222222;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
 }
 
 .project-header img {
