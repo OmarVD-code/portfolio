@@ -25,7 +25,7 @@
     border-radius: 18px;
     position: relative;
     overflow: hidden;
-    height: 24vw;
+    height: 50vh;
 
     border: 3px solid var(--gold-3);
     border-radius: var(--radius-lg);
@@ -71,7 +71,6 @@
     gap: 10px;
     padding: 14px 16px;
     position: relative;
-    z-index: 2;
 
     background: linear-gradient(180deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .55));
     border-bottom: 1px solid rgba(247, 213, 107, .25);
@@ -103,9 +102,8 @@
 }
 
 .about-body {
-    padding: 22px 66px 26px;
+    padding: 50px;
     position: relative;
-    z-index: 2;
 }
 
 .about-text {
@@ -143,16 +141,6 @@
     letter-spacing: .06em;
 }
 
-@media (max-width: 520px) {
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
-
-    .about-title {
-        font-size: 16px;
-    }
-}
-
 .machine-wrapper {
     width: 50%;
     display: grid;
@@ -164,7 +152,7 @@
 .slot-machine {
     position: relative;
     width: 40vw;
-    height: 24vw;
+    height: 50vh;
     background-image: url("src/assets/img/poker-banner.png");
     background-size: cover;
     background-position: center;
@@ -392,7 +380,8 @@
     filter: brightness(0.98);
 }
 
-.reel a, .reel span {
+.reel a,
+.reel span {
     cursor: pointer;
 }
 
@@ -402,33 +391,30 @@
     margin-top: 2rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1366px) {
     .about {
         height: auto;
     }
 
     .about-wrapper {
-        flex-direction: column;
+        flex-direction: row;
     }
 
-    .about-wrap {
-        width: 100%;
+    .about-wrap,
+    .machine-wrapper {
+        width: 50%;
     }
 
     .about-card {
-        width: 75vw;
-        height: 45vw;
+        height: 60vh;
     }
 
-    .slot-machine {
-        width: 75vw;
-        height: 45vw;
-        display: flex;
-        justify-content: center;
+    .about-body {
+        padding: 25px;
     }
 
-    .machine-wrapper {
-        width: 100%;
+    .about-text {
+        font-size: 14px;
     }
 
     .machine-body {
@@ -436,9 +422,15 @@
         inset: 18px;
     }
 
+    .slot-machine {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+    }
+
     .reel-window {
         grid-template-columns: 1fr 1fr 1fr;
-        height: 40%;
+        height: 50%;
     }
 
     .reel {
@@ -446,32 +438,110 @@
         height: 100px;
     }
 
-    .reel a {
-        margin: 0 10px;
-        font-size: 3rem;
+    .reel img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-wrap,
+    .machine-wrapper {
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    .about-title {
+        font-size: 11px;
+    }
 
     .about-card,
     .slot-machine {
-        height: 90vh;
+        width: 100%;
+    }
+
+    .about-card {
+        height: 40vh;
+    }
+
+    .slot-machine {
+        height: 30vh;
     }
 
     .about-body {
-        padding: 5px 10px 8px;
+        padding: 5px;
+        font-size: 11px;
         position: relative;
-        z-index: 2;
     }
 
     .about-text {
-        font-size: 13px;
-        text-align: left;
+        font-size: 11px;
+        text-align: justify;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
     }
 
     .reel-window {
-        grid-template-columns: 1fr;
-        height: 60%;
+        width: 100%;
+    }
+
+    .reel {
+        width: 60px;
+        height: 60px;
+    }
+
+    .reel img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .lever-outer {
+        width: 40px;
+        height: 150px;
+    }
+
+    .lever-knob {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-text {
+        font-size: 9px;
+    }
+
+    .about-body {
+        padding: 5px;
+        font-size: 9px;
+    }
+
+    .reel {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reel img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .lever-outer {
+        width: 30px;
+        height: 120px;
+    }
+
+    .lever-knob {
+        width: 24px;
+        height: 24px;
     }
 }
