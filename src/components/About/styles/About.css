@@ -113,7 +113,7 @@
     color: rgba(255, 255, 255, .86);
     line-height: 1.65;
     font-size: 15px;
-    text-align: justify;    
+    text-align: justify;
 }
 
 .about-stats {
@@ -411,12 +411,33 @@
     color: #0976b3;
 }
 
-@media (max-width: 950px) {
-    .slot-machine {
-        height: 100%;
+@media (max-width: 1300px) {
+    .about {
+        height: auto;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-wrap {
+        width: 100%;
+    }
+
+    .about-card {
         width: 75vw;
+        height: 45vw;
+    }
+
+    .slot-machine {
+        width: 75vw;
+        height: 45vw;
         display: flex;
         justify-content: center;
+    }
+
+    .machine-wrapper {
+        width: 100%;
     }
 
     .machine-body {
@@ -425,17 +446,41 @@
     }
 
     .reel-window {
-        grid-template-columns: 1fr;
-        height: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 40%;
     }
 
     .reel {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     }
 
     .reel a {
         margin: 0 10px;
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .about-card,
+    .slot-machine {
+        height: 90vh;
+    }
+
+    .about-body {
+        padding: 5px 10px 8px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .about-text {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .reel-window {
+        grid-template-columns: 1fr;
+        height: 60%;
     }
 }
