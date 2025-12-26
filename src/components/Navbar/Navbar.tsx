@@ -1,6 +1,7 @@
 import { useMemo, useState, useCallback, useEffect } from "react";
 import MenuButton from "./MenuButton";
 import { useActiveSection } from "../../hooks/useActiveSection";
+import { useNavigateSection } from "../../hooks/useNavigateSection";
 import "./styles/Navbar.css";
 
 const SECTIONS = ["wallpaper_", "about_", "portfolio_", "skillset_", "contact_"] as const;
@@ -17,6 +18,7 @@ const NAV_ITEMS: NavItem[] = [
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+    const navigate = useNavigateSection();
     const activeId = useActiveSection(SECTIONS as unknown as string[]);
 
     useEffect(() => {
@@ -27,17 +29,12 @@ export default function Navbar() {
         };
     }, [open]);
 
-
     const toggle = useCallback(() => setOpen((v) => !v), []);
-
 
     const handleNavigate = useCallback((id: string) => {
         setOpen(false);
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        history.replaceState(null, "", `#${id}`);
-    }, []);
+        navigate(id);
+    }, [navigate]);
 
 
     const items = useMemo(() => NAV_ITEMS, []);

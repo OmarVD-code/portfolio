@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 
 export function useRevealOnScroll(
   options?: {
-    delay?: number;          // ms antes de revelar
-    initialFlipped?: boolean; // true = empieza boca abajo
+    delay?: number;
+    initialFlipped?: boolean;
   }
 ) {
   const { delay = 600, initialFlipped = true } = options || {};

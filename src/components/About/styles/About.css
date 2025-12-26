@@ -224,8 +224,8 @@
 }
 
 .reel {
-    width: 110px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
     background:
         radial-gradient(120% 100% at 50% 0%, rgba(255, 255, 255, 0.55), transparent 60%),
         linear-gradient(180deg, #fffef7, var(--ivory));
@@ -392,23 +392,14 @@
     filter: brightness(0.98);
 }
 
-.reel a {
-    margin: 0 10px;
-    font-size: 4.5rem;
-    color: #000;
-    transition: transform 0.3s ease, color 0.3s ease;
+.reel a, .reel span {
+    cursor: pointer;
 }
 
-.cv-icon:hover {
-    color: #ff4e50;
-}
-
-.github-icon:hover {
-    color: #832c94;
-}
-
-.linkedin-icon:hover {
-    color: #0976b3;
+.reel img {
+    width: 100px;
+    height: 100px;
+    margin-top: 2rem;
 }
 
 @media (max-width: 1300px) {

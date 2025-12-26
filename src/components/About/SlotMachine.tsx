@@ -1,17 +1,21 @@
 import { useRef, useState } from "react";
+import { useNavigateSection } from "../../hooks/useNavigateSection";
 
-type SymbolType = "cv" | "github" | "linkedin";
+type SymbolType = "cv" | "github" | "linkedin" | "projects" | "contact";
 
-const SYMBOLS: SymbolType[] = ["cv", "github", "linkedin"];
+const SYMBOLS: SymbolType[] = ["cv", "github", "linkedin", "projects", "contact"];
 
 export default function SlotMachine() {
     const leverOuterRef = useRef<HTMLDivElement | null>(null);
+    const navigate = useNavigateSection();
 
     const [message, setMessage] = useState("Spin to know me");
     const [reels, setReels] = useState<SymbolType[]>([
         "cv",
         "github",
         "linkedin",
+        // "projects",
+        // "contact",
     ]);
 
     const spinOnce = () => {
@@ -64,10 +68,9 @@ export default function SlotMachine() {
                                         href="/cv/omarVillarreal.pdf"
                                         target="_blank"
                                         title="Download CV"
-                                        className="cv-icon"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fas fa-file-download" />
+                                        <img src="src/assets/img/cv.png" alt="Resume" />
                                     </a>
                                 )}
 
@@ -76,10 +79,9 @@ export default function SlotMachine() {
                                         href="https://github.com/OmarVD-code"
                                         target="_blank"
                                         title="GitHub"
-                                        className="github-icon"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-github" />
+                                        <img src="src/assets/img/gh.png" alt="GitHub" />
                                     </a>
                                 )}
 
@@ -88,11 +90,28 @@ export default function SlotMachine() {
                                         href="https://www.linkedin.com/in/omar-villarreal1"
                                         target="_blank"
                                         title="LinkedIn"
-                                        className="linkedin-icon"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-linkedin-in" />
+                                        <img src="src/assets/img/linkedin.png" alt="Linkedin" />
                                     </a>
+                                )}
+
+                                {symbol === "projects" && (
+                                    <span
+                                        onClick={() => navigate("portfolio_")}
+                                        title="Projects"
+                                    >
+                                        <img src="src/assets/img/folder.png" alt="Projects" />
+                                    </span>
+                                )}
+
+                                {symbol === "contact" && (
+                                    <span
+                                        onClick={() => navigate("contact_")}
+                                        title="Contact Me"
+                                    >
+                                        <img src="src/assets/img/email.png" alt="COntact Me" />
+                                    </span>
                                 )}
                             </div>
                         ))}
