@@ -53,66 +53,103 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="machine-wrapper">
-                <div className="slot-machine" role="application" aria-label="Slot Machine">
-                    <div className="hud">
-                        <span id="score-display">{message}</span>
-                    </div>
+            <div className="about-wrapper">
+                <div className="about-wrap">
+                    <div className="about-card">
+                        <header className="about-marquee">
+                            <span className="about-marquee__dot"></span>
+                            <span className="about-marquee__dot"></span>
+                            <span className="about-marquee__dot"></span>
+                            <h2 className="about-title">ABOUT ME</h2>
+                            <span className="about-marquee__dot"></span>
+                            <span className="about-marquee__dot"></span>
+                            <span className="about-marquee__dot"></span>
+                        </header>
 
-                    <div className="machine-body">
-                        <div className="reel-window">
+                        <div className="about-body">
+                            <p className="about-text">
+                                Fullstack Developer with over 3 years of experience building real, business-oriented systems.
+                                I have worked on the development of critical modules, dashboards, end-to-end workflows, and business rules for production web applications.
 
-                            {reels.map((symbol, i) => (
-                                <div className="reel" key={i}>
-                                    {symbol === "cv" && (
-                                        <a
-                                            href="/cv/omarVillarreal.pdf"
-                                            target="_blank"
-                                            title="Download CV"
-                                            className="cv-icon"
-                                        >
-                                            <i className="fas fa-file-download" />
-                                        </a>
-                                    )}
+                                I have led and supervised other developers, supporting code reviews, technical decision-making, and architectural improvements, always focusing on code quality, maintainability, and performance.
 
-                                    {symbol === "github" && (
-                                        <a
-                                            href="https://github.com/OmarVD-code"
-                                            target="_blank"
-                                            title="GitHub"
-                                            className="github-icon"
-                                        >
-                                            <i className="fab fa-github" />
-                                        </a>
-                                    )}
+                                I specialize in turning complex requirements into clear, scalable, and well-structured solutions, taking care of both backend logic and the overall user experience.                            
+                            </p>                            
 
-                                    {symbol === "linkedin" && (
-                                        <a
-                                            href="https://www.linkedin.com/in/omar-villarreal1"
-                                            target="_blank"
-                                            title="LinkedIn"
-                                            className="linkedin-icon"
-                                        >
-                                            <i className="fab fa-linkedin-in" />
-                                        </a>
-                                    )}
+                            <div className="about-stats">
+                                <div className="stat">
+                                    <span className="stat__label">Experience</span>
+                                    <span className="stat__value">3+ years</span>
                                 </div>
-                            ))}
-
-                        </div>
-
-                        <button
-                            className="lever"
-                            onClick={spinOnce}
-                            aria-label="Pull lever to spin"
-                        >
-                            <div className="lever-outer" ref={leverOuterRef}>
-                                <div className="lever-inner">
-                                    <div className="lever-stick"></div>
-                                    <div className="lever-knob"></div>
+                                <div className="stat">
+                                    <span className="stat__label">Role</span>
+                                    <span className="stat__value">Fullstack Developer</span>
                                 </div>
                             </div>
-                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="machine-wrapper">
+                    <div className="slot-machine" role="application" aria-label="Slot Machine">
+                        <div className="hud">
+                            <span id="score-display">{message}</span>
+                        </div>
+
+                        <div className="machine-body">
+                            <div className="reel-window">
+
+                                {reels.map((symbol, i) => (
+                                    <div className="reel" key={i}>
+                                        {symbol === "cv" && (
+                                            <a
+                                                href="/cv/omarVillarreal.pdf"
+                                                target="_blank"
+                                                title="Download CV"
+                                                className="cv-icon"
+                                            >
+                                                <i className="fas fa-file-download" />
+                                            </a>
+                                        )}
+
+                                        {symbol === "github" && (
+                                            <a
+                                                href="https://github.com/OmarVD-code"
+                                                target="_blank"
+                                                title="GitHub"
+                                                className="github-icon"
+                                            >
+                                                <i className="fab fa-github" />
+                                            </a>
+                                        )}
+
+                                        {symbol === "linkedin" && (
+                                            <a
+                                                href="https://www.linkedin.com/in/omar-villarreal1"
+                                                target="_blank"
+                                                title="LinkedIn"
+                                                className="linkedin-icon"
+                                            >
+                                                <i className="fab fa-linkedin-in" />
+                                            </a>
+                                        )}
+                                    </div>
+                                ))}
+
+                            </div>
+
+                            <button
+                                className="lever"
+                                onClick={spinOnce}
+                                aria-label="Pull lever to spin"
+                            >
+                                <div className="lever-outer" ref={leverOuterRef}>
+                                    <div className="lever-inner">
+                                        <div className="lever-stick"></div>
+                                        <div className="lever-knob"></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
