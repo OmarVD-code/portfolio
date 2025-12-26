@@ -24,8 +24,6 @@ export default function Welcome() {
                     className="photo"
                     src="src/assets/img/photo.jpg"
                     alt="Me"
-                    width="200px"
-                    height="200px"
                 />
             </div>
         </section>
