@@ -39,6 +39,7 @@ export default function Navbar() {
 
     const items = useMemo(() => NAV_ITEMS, []);
 
+    const [lang, setLang] = useState<"en" | "es">("en");
 
     return (
         <header className="nav">
@@ -65,6 +66,26 @@ export default function Navbar() {
                         ))}
                     </ul>
                 </nav>
+
+                <div className="nav-lang">
+                    <button
+                        className={lang === "es" ? "active" : ""}
+                        onClick={() => setLang("es")}
+                        aria-label="Cambiar a Español"
+                    >
+                        <img src="src/assets/img/languages/es.svg" alt="Español" />
+                    </button>
+
+                    <span className="sep">|</span>
+
+                    <button
+                        className={lang === "en" ? "active" : ""}
+                        onClick={() => setLang("en")}
+                        aria-label="Switch to English"
+                    >
+                        <img src="src/assets/img/languages/gb.svg" alt="English" />
+                    </button>
+                </div>
 
                 <MenuButton open={open} onClick={toggle} />
             </div>

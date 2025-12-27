@@ -116,13 +116,17 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .project-text {
-        font-size: 12px;
+    .project-body p, .project-tools .tag {
+        font-size: 11px;
     }
 }
 
 @media(max-width: 750px) {
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    .project-body p, .project-tools .tag {
+        font-size: 10px;
     }
 }

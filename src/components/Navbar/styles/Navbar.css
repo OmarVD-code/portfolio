@@ -16,20 +16,21 @@
 .nav-items {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .nav-logo {
     width: 50%;
     padding-left: 80px;
-    padding-top: 10px;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
+
 .nav-menu {
     width: 50%;
-    padding-right: 80px;
+    margin-right: 40px;
 }
 
 .nav-menu ul {
@@ -48,11 +49,48 @@
     transition: .4s ease color;
 }
 
+.nav-lang {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 80px;
+}
+
+.nav-lang img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: .3;
+}
+
+.nav-lang button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav-lang button.active img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.nav-lang img:hover {
+    opacity: 1;
+}
+
+.nav-lang .sep {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 24px;
+    margin-bottom: .5rem;
+}
+
 .menu-btn {
     position: absolute;
     cursor: pointer;
     right: 25px;
-    top: 10px;
+    top: 20px;
     color: #fff;
     display: none;
 }
@@ -64,6 +102,11 @@
 
     .nav-logo {
         padding-left: 40px;
+    }
+
+    .nav-logo img {
+        width: 36px;
+        height: 36px;
     }
 
     .nav-menu {
@@ -100,5 +143,6 @@
     .menu-btn {
         display: block;
         color: #5138f3;
+        font-size: 12px;
     }
 }
