@@ -266,7 +266,6 @@
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(0, 0, 0, 0.15)),
         linear-gradient(to bottom, #4a3a1a, #1e1607);
-    /* brass housing */
     border: 2px solid var(--gold-3);
     border-radius: 12px;
     box-shadow:
@@ -296,7 +295,6 @@
     grid-row: 3;
 }
 
-/* Knob (ruby sphere) */
 .lever-knob {
     grid-row: 2;
     width: var(--knob);
