@@ -70,7 +70,7 @@ export default function SlotMachine() {
                                         title="Download CV"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="src/assets/img/cv.png" alt="Resume" />
+                                        <img src="src/assets/img/about/cv.png" alt="Resume" />
                                     </a>
                                 )}
 
@@ -81,7 +81,7 @@ export default function SlotMachine() {
                                         title="GitHub"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="src/assets/img/gh.png" alt="GitHub" />
+                                        <img src="src/assets/img/about/github.png" alt="GitHub" />
                                     </a>
                                 )}
 
@@ -92,7 +92,7 @@ export default function SlotMachine() {
                                         title="LinkedIn"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="src/assets/img/linkedin.png" alt="Linkedin" />
+                                        <img src="src/assets/img/about/linkedin.png" alt="Linkedin" />
                                     </a>
                                 )}
 
@@ -101,7 +101,7 @@ export default function SlotMachine() {
                                         onClick={() => navigate("portfolio_")}
                                         title="Projects"
                                     >
-                                        <img src="src/assets/img/folder.png" alt="Projects" />
+                                        <img src="src/assets/img/about/folder.png" alt="Projects" />
                                     </span>
                                 )}
 
@@ -110,7 +110,7 @@ export default function SlotMachine() {
                                         onClick={() => navigate("contact_")}
                                         title="Contact Me"
                                     >
-                                        <img src="src/assets/img/email.png" alt="COntact Me" />
+                                        <img src="src/assets/img/about/email.png" alt="COntact Me" />
                                     </span>
                                 )}
                             </div>
