@@ -38,19 +38,19 @@ export default function ProjectCard({ title, desc, img, tools, demo, code }: Pro
                         </div>
                     </div>
                     <div className="project-footer">
-                        <a href={demo} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}
-                        >
-                            <i className="fas fa-globe-americas" /> <span>Demo</span>
+                        <a href={demo} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title="Demo"
+                        >                        
+                            <i className="fab fa-chrome" />
                         </a>
-                        <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}
+                        <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title="Code"
                         >
-                            <i className="fab fa-github" /> <span>Code</span>
-                        </a>
+                            <i className="fab fa-github" />
+                        </a>                     
                     </div>
                 </div>
 
                 <div className="flip-card-back">
-                    <img src="src/assets/img/cardbackred.png" alt="Card back" />
+                    <img src="src/assets/img/blackcardback.png" alt="Card back" />
                 </div>
             </div>
         </div>

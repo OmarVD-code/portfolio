@@ -109,11 +109,6 @@ body::-webkit-scrollbar {
     }
 }
 
-.tag {
-    font-weight: bolder;
-    color: #2b47ff;
-}
-
 /* RESPONSIVE DESIGN */
 @media (min-width: 320px) and (max-width: 750px) {
     .about,
