@@ -405,15 +405,16 @@
     }
 
     .about-card {
-        height: 60vh;
+        height: 70vh;
     }
 
     .about-body {
         padding: 25px;
     }
 
+    .about-body,
     .about-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .machine-body {
@@ -422,7 +423,7 @@
     }
 
     .slot-machine {
-        height: 60vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
     }
@@ -466,6 +467,7 @@
 
     .about-card {
         height: 40vh;
+        overflow-y: auto;
     }
 
     .slot-machine {
@@ -484,7 +486,7 @@
     }
 
     .about-stats {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .reel-window {
@@ -522,6 +524,11 @@
     .about-body {
         padding: 5px;
         font-size: 9px;
+    }
+
+    .slot-machine {
+        display: flex;
+        place-items: center;
     }
 
     .reel {

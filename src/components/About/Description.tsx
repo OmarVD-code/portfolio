@@ -31,6 +31,14 @@ export default function Description() {
                             <span className="stat__label">Role</span>
                             <span className="stat__value">Fullstack Developer</span>
                         </div>
+                        <div className="stat">
+                            <span className="stat__label">Email</span>
+                            <span className="stat__value">omarvillarreal2000@gmail.com</span>
+                        </div>
+                        <div className="stat">
+                            <span className="stat__label">Phone</span>
+                            <span className="stat__value">+51 938273697</span>
+                        </div>
                     </div>
                 </div>
             </div>

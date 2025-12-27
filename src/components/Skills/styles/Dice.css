@@ -294,6 +294,7 @@ body {
     .icon-skill {
         display: flex;
         flex-direction: column;
+        place-items: center;
     }
 
     .face-icons img {

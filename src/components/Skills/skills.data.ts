@@ -107,10 +107,6 @@ export const skills = [
                 img: "src/assets/img/github-original.svg"
             },
             {
-                name: "Visual Studio Code",
-                img: "src/assets/img/vscode-original.svg"
-            },
-            {
                 name: "npm",
                 img: "src/assets/img/npm-original-wordmark.svg"
             },
