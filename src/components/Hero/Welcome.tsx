@@ -1,6 +1,9 @@
 import "./styles/Welcome.css";
+import { useNavigateSection } from "../../hooks/useNavigateSection";
 
 export default function Welcome() {
+    const navigate = useNavigateSection();
+    
     return (
         <section id="wallpaper_" className="wallpaper">
             <div className="sign"></div>
@@ -25,6 +28,12 @@ export default function Welcome() {
                     src="src/assets/img/photo.jpg"
                     alt="Me"
                 />
+                <button
+                    className="hero-cta"
+                    onClick={() => navigate("portfolio_")}
+                >
+                    Explore My Work
+                </button>
             </div>
         </section>
     )
