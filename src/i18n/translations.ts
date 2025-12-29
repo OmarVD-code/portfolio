@@ -25,7 +25,7 @@ export const translations = {
             contact: "Contacto",
         },
         hero: {
-            cta: "Explorar mi trabajo",
+            cta: "Ver mi trabajo",
         },
         about: {
             title: "SOBRE MÍ",

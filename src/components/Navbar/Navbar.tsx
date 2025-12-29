@@ -45,7 +45,7 @@ export default function Navbar() {
     );
 
     return (
-        <header className="nav">
+        <div className="nav">
             <div className="nav-items">
                 <div className="nav-logo">
                     <img
@@ -99,6 +99,6 @@ export default function Navbar() {
 
                 <MenuButton open={open} onClick={toggle} />
             </div>
-        </header>
+        </div>
     );
 }

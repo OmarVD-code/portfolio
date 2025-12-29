@@ -1,9 +1,11 @@
 import "./styles/Welcome.css";
 import { useNavigateSection } from "../../hooks/useNavigateSection";
+import { useI18n } from "@/i18n/I18nProvider";
 
 export default function Welcome() {
     const navigate = useNavigateSection();
-    
+    const { t } = useI18n();
+
     return (
         <section id="wallpaper_" className="wallpaper">
             <div className="sign"></div>
@@ -22,7 +24,7 @@ export default function Welcome() {
                 </div>
                 <div className="my">My Portfolio</div>
                 <div className="las">OMAR <br className="breaker" /> VILLARREAL</div>
-                <div className="nv">SOFTWARE <br className="breaker" /> DEVELOPER</div>
+                <div className="nv">SOFTWARE <br className="breaker" />DEVELOPER</div>
                 <img
                     className="photo"
                     src="src/assets/img/photo.jpg"
@@ -32,7 +34,7 @@ export default function Welcome() {
                     className="hero-cta"
                     onClick={() => navigate("portfolio_")}
                 >
-                    Explore My Work
+                    {t("hero.cta")}
                 </button>
             </div>
         </section>
