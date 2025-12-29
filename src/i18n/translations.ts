@@ -20,6 +20,7 @@ export const translations = {
             years: "years",
             role: "Role",
             role_answer: "Fullstack Developer",
+            email: "Email",
             phone: "Phone",
             projects: "Projects",
             contact: "Contact",
@@ -58,6 +59,16 @@ export const translations = {
             tools: "Tools",
             languages: "Languages"
         },
+        contact: {
+            marquee: "FEEL FREE TO REACH OUT",
+            form: {
+                name: "Fullname",
+                email: "Email",
+                message: "Message",
+                submit: "Submit",
+                success: "Thanks for contacting me! I'll get back to you as soon as possible.",
+            }
+        }
     },
     es: {
         nav: {
@@ -78,6 +89,7 @@ export const translations = {
             years: "años",
             role: "Rol",
             role_answer: "Desarrollador Fullstack",
+            email: "Correo electrónico",
             phone: "Teléfono",
             projects: "Proyectos",
             contact: "Contacto",
@@ -115,6 +127,16 @@ export const translations = {
             database: "Bases de datos",
             tools: "Herramientas",
             languages: "Idiomas"
+        },
+        contact: {
+            marquee: "NO DUDES EN CONTACTARME",
+            form: {
+                name: "Nombres",
+                email: "Correo electrónico",
+                message: "Mensaje",
+                submit: "Enviar",
+                success: "Gracias por contactarme. Te responderé lo antes posible.",
+            }
         }
     },
 } as const;

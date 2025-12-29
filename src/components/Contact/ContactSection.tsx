@@ -1,12 +1,15 @@
 import ContactForm from "./ContactForm";
 import "./styles/Contact.css";
+import { useI18n } from "@/i18n/I18nProvider";
 
 export default function ContactSection() {
+    const { t } = useI18n();
+
     return (
         <section id="contact_" className="contact">
             <div className="header-container">
                 <div className="section-header" aria-hidden="true">
-                    <div className="line">★ FEEL FREE TO REACH OUT - I'M ALWAYS OPEN TO QUESTIONS ★</div>
+                    <div className="line">★ {t("contact.marquee")} ★</div>
                 </div>
             </div>
             <div className="contact-content">

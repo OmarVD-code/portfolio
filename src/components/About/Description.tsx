@@ -31,7 +31,7 @@ export default function Description() {
                             <span className="stat__value">{t("about.role_answer")}</span>
                         </div>
                         <div className="stat">
-                            <span className="stat__label">Email</span>
+                            <span className="stat__label">{t("about.email")}</span>
                             <span className="stat__value">omarvillarreal2000@gmail.com</span>
                         </div>
                         <div className="stat">
