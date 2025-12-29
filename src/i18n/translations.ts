@@ -39,7 +39,25 @@ export const translations = {
                 title: "AMG SOFT",
                 desc: "I worked for over 3 years on this large internal enterprise system used to manage multiple core business processes across the company. The project was a long-term product developed through continuous iterations and agile sprints. My role involved developing new features, enhancing existing modules, maintaining production code, and optimizing database queries to improve performance and stability.",
             }
-        }
+        },
+        skills: {
+            marquee: "ROLL THE DICE OR USE THE CONTROL PANEL TO SEE MY SKILLS.",
+            controller: {
+                roll: "Roll",
+                colors: {
+                    white: "White",
+                    black: "Black"
+                },
+                show_all: "Show All",
+                dice_mode: "Dice Mode"
+            },
+            front_end: "Front-end",
+            back_end: "Back-end",
+            devops: "DevOps",
+            database: "Database",
+            tools: "Tools",
+            languages: "Languages"
+        },
     },
     es: {
         nav: {
@@ -74,11 +92,29 @@ export const translations = {
             2: {
                 title: "RED SOCIAL",
                 desc: "Trabajé en este proyecto para crear una plataforma de compartición de medios sociales utilizando Amazon DynamoDB. El proyecto fue un producto de largo plazo desarrollado a través de iteraciones continuas y sprints ágiles. Mi rol incluyó el desarrollo de nuevas funcionalidades, la mejora de módulos existentes, el mantenimiento de código en producción y la optimización de consultas a base de datos para mejorar el rendimiento y la estabilidad del sistema.",
-            },            
+            },
             3: {
                 title: "AMG SOFT",
                 desc: "Trabajé durante más de 3 años en este gran sistema interno empresarial, utilizado para gestionar múltiples procesos clave del negocio dentro de la compañía. El proyecto fue un producto de largo plazo, desarrollado mediante iteraciones continuas y sprints ágiles. Mi rol incluyó el desarrollo de nuevas funcionalidades, la mejora de módulos existentes, el mantenimiento de código en producción y la optimización de consultas a base de datos para mejorar el rendimiento y la estabilidad del sistema.",
             }
+        },
+        skills: {
+            marquee: "TIRE EL DADO O UTILICE EL PANEL DE CONTROL PARA VER MIS HABILIDADES",
+            controller: {
+                roll: "Tirar",
+                colors: {
+                    white: "Blanco",
+                    black: "Negro"
+                },
+                show_all: "Ver todo",
+                dice_mode: "Dado"
+            },
+            front_end: "Front-end",
+            back_end: "Back-end",
+            devops: "DevOps",
+            database: "Bases de datos",
+            tools: "Herramientas",
+            languages: "Idiomas"
         }
     },
 } as const;

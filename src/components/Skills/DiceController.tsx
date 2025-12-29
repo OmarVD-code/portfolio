@@ -1,3 +1,5 @@
+import { useI18n } from "@/i18n/I18nProvider";
+
 type SkillsDiceControllerProps = {
     showAll: boolean;
     onRoll: () => void;
@@ -13,23 +15,25 @@ export default function SkillsDiceController({
     onChangeDiceType,
     onToggleView,
 }: SkillsDiceControllerProps) {
+    const { t } = useI18n();
+
     return (
         <div className="controller">
             <button onClick={onRoll} disabled={showAll}>
-                Roll
+                {t("skills.controller.roll")}
             </button>
 
             <br />
 
             <select value={diceType} onChange={(e) => onChangeDiceType(e.target.value)}>
-                <option value="">white</option>
-                <option value="black">black</option>
+                <option value="">{t("skills.controller.colors.white")}</option>
+                <option value="black">{t("skills.controller.colors.black")}</option>
             </select>
 
             <br />
 
             <button onClick={onToggleView}>
-                {showAll ? "Dice Mode" : "Show All"}
+                {showAll ? t("skills.controller.dice_mode") : t("skills.controller.show_all")}
             </button>
         </div>
     );

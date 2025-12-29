@@ -1,3 +1,5 @@
+import { useI18n } from "@/i18n/I18nProvider";
+
 type SkillItem = {
     img: string;
     name: string;
@@ -9,10 +11,11 @@ type FaceContentProps = {
 };
 
 export default function FaceContent({ title, items }: FaceContentProps) {
+    const { t } = useI18n();
+
     return (
         <div className="face-content">
-            <h3 className="face-title">{title}</h3>
-
+            <h3 className="face-title">{t(title)}</h3>
             <div className="face-icons">
                 {items.map((item, index) => (
                     <div key={index} className="icon-skill"

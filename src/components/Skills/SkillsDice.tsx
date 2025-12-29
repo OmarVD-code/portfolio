@@ -1,12 +1,13 @@
 import { useRef, useState } from "react";
-
 import DiceFace from "./DiceFace";
 import DiceController from "./DiceController";
-
 import "./styles/Dice.css";
 import { skills } from "./skills.data";
+import { useI18n } from "@/i18n/I18nProvider";
 
 export default function SkillsDice() {
+    const { t } = useI18n();
+
     const diceRef = useRef<HTMLDivElement | null>(null);
     const [rolling, setRolling] = useState(false);
     const [diceType, setDiceType] = useState("");
@@ -54,7 +55,7 @@ export default function SkillsDice() {
         <section id="skillset_" className="skill-dice">
             <div className="header-container">
                 <div className="section-header" aria-hidden="true">
-                    <div className="line">★ ROLL THE DICE OR USE THE CONTROL PANEL TO EXPLORE MY SKILLS. ★</div>
+                    <div className="line">★ {t("skills.marquee")} ★</div>
                 </div>
             </div>
             {!showAll && (

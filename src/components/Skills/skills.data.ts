@@ -1,7 +1,7 @@
 export const skills = [
     {
         id: 1,
-        title: "Front-end",
+        title: "skills.front_end",
         face: "front",
         items: [
             {
@@ -30,7 +30,7 @@ export const skills = [
     },
     {
         id: 2,
-        title: "Back-end",
+        title: "skills.back_end",
         face: "up",
         items: [
             {
@@ -61,7 +61,7 @@ export const skills = [
     },
     {
         id: 3,
-        title: "Database",
+        title: "skills.database",
         face: "left",
         items: [
             {
@@ -80,7 +80,7 @@ export const skills = [
     },
     {
         id: 4,
-        title: "DevOps",
+        title: "skills.devops",
         face: "right",
         items: [
             {
@@ -95,7 +95,7 @@ export const skills = [
     },
     {
         id: 5,
-        title: "Tools",
+        title: "skills.tools",
         face: "bottom",
         items: [
             {
@@ -114,7 +114,7 @@ export const skills = [
     },
     {
         id: 6,
-        title: "Languages",
+        title: "skills.languages",
         face: "back",
         items: [
             {
