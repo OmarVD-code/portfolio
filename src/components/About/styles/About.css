@@ -101,7 +101,7 @@
 }
 
 .about-body {
-    padding: 50px;
+    padding: 30px;
     position: relative;
 }
 
@@ -152,7 +152,7 @@
     position: relative;
     width: 40vw;
     height: 50vh;
-    background-image: url("src/assets/img/poker-banner.png");
+    background-image: url("/img/poker-banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,20 +165,6 @@
         0 0 36px var(--gold-glow);
     overflow: hidden;
     padding: 22px;
-}
-
-.hud {
-    position: absolute;
-    top: 10px;
-    left: 16px;
-    font-size: 0.95rem;
-    color: var(--gold-1);
-    text-shadow: 0 0 10px rgba(255, 215, 90, 0.5);
-    background: rgba(20, 8, 6, 0.45);
-    border: 1px solid rgba(255, 215, 90, 0.35);
-    padding: 6px 10px;
-    border-radius: 999px;
-    backdrop-filter: blur(2px);
 }
 
 .machine-body {

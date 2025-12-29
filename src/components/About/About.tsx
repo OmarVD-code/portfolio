@@ -1,14 +1,17 @@
 import "./styles/About.css";
 import Description from "./Description";
 import SlotMachine from "./SlotMachine";
+import { useI18n } from "@/i18n/I18nProvider";
 
 export default function About() {
+    const { t } = useI18n();
+
     return (
         <section id="about_" className="about">
             <div className="header-container">
                 <div className="section-header" aria-hidden="true">
                     <div className="line">
-                        ★ PULL THE LEVER TO EXPLORE MY SOCIAL MEDIA ★
+                        ★ {t("about.marquee")} ★
                     </div>
                 </div>
             </div>

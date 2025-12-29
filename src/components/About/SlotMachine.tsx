@@ -1,15 +1,15 @@
 import { useRef, useState } from "react";
 import { useNavigateSection } from "../../hooks/useNavigateSection";
-
 type SymbolType = "cv" | "github" | "linkedin" | "projects" | "contact";
-
 const SYMBOLS: SymbolType[] = ["cv", "github", "linkedin", "projects", "contact"];
+import { useI18n } from "@/i18n/I18nProvider";
 
 export default function SlotMachine() {
+    const { t } = useI18n();
+
     const leverOuterRef = useRef<HTMLDivElement | null>(null);
     const navigate = useNavigateSection();
 
-    const [message, setMessage] = useState("Spin to know me");
     const [reels, setReels] = useState<SymbolType[]>([
         "cv",
         "github",
@@ -21,7 +21,6 @@ export default function SlotMachine() {
     const spinOnce = () => {
         if (!leverOuterRef.current) return;
 
-        // animación palanca
         leverOuterRef.current.classList.add("pull");
 
         const result: SymbolType[] = Array.from({ length: 3 }, () =>
@@ -29,23 +28,10 @@ export default function SlotMachine() {
         );
 
         setReels(result);
-        score(result);
 
         setTimeout(() => {
             leverOuterRef.current?.classList.remove("pull");
         }, 820);
-    };
-
-    const score = (result: SymbolType[]) => {
-        const [a, b, c] = result;
-
-        if (a === b && b === c) {
-            setMessage("💰 JACKPOT!");
-        } else if (a === b || b === c || a === c) {
-            setMessage("⭐ Nice match! Almost there");
-        } else {
-            setMessage("❌ No luck! Spin again");
-        }
     };
 
     return (
@@ -55,10 +41,6 @@ export default function SlotMachine() {
                 role="application"
                 aria-label="Slot Machine"
             >
-                <div className="hud">
-                    <span id="score-display">{message}</span>
-                </div>
-
                 <div className="machine-body">
                     <div className="reel-window">
                         {reels.map((symbol, i) => (
@@ -99,7 +81,7 @@ export default function SlotMachine() {
                                 {symbol === "projects" && (
                                     <span
                                         onClick={() => navigate("portfolio_")}
-                                        title="Projects"
+                                        title={t("about.projects")}
                                     >
                                         <img src="src/assets/img/about/folder.png" alt="Projects" />
                                     </span>
@@ -108,9 +90,9 @@ export default function SlotMachine() {
                                 {symbol === "contact" && (
                                     <span
                                         onClick={() => navigate("contact_")}
-                                        title="Contact Me"
+                                        title={t("about.contact")}
                                     >
-                                        <img src="src/assets/img/about/email.png" alt="COntact Me" />
+                                        <img src="src/assets/img/about/email.png" alt="Contact Me" />
                                     </span>
                                 )}
                             </div>
