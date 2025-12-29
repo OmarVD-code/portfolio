@@ -1,4 +1,5 @@
 import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
+import { useI18n } from "@/i18n/I18nProvider";
 
 type Props = {
     title: string;
@@ -7,14 +8,16 @@ type Props = {
     tools: string[];
     demo: string;
     code: string;
-    isCodeAvailable: boolean;
+    is_code_available: boolean;
 };
 
-export default function ProjectCard({ title, desc, img, tools, demo, code, isCodeAvailable }: Props) {
+export default function ProjectCard({ title, desc, img, tools, demo, code, is_code_available }: Props) {
     const { cardRef, flipped, toggleFlipped } = useRevealOnScroll({
         delay: 600,
         initialFlipped: true,
     });
+
+    const { t } = useI18n();
 
     return (
         <div
@@ -28,8 +31,8 @@ export default function ProjectCard({ title, desc, img, tools, demo, code, isCod
                         <img src={img} alt={title} />
                     </div>
                     <div className="project-body">
-                        <strong>{title}</strong>
-                        <p>{desc}</p>
+                        <strong>{t(title)}</strong>
+                        <p>{t(desc)}</p>
                         <div className="project-tools">
                             {tools.map(t => (
                                 <span key={t} className="tag">
@@ -43,7 +46,7 @@ export default function ProjectCard({ title, desc, img, tools, demo, code, isCod
                         >
                             <i className="fab fa-chrome" />
                         </a>
-                        {isCodeAvailable && <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title="Code"
+                        {is_code_available && <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title={t("projects.code")}
                         >
                             <i className="fab fa-github" />
                         </a>}
