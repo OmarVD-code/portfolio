@@ -14,7 +14,7 @@ function getByPath(obj: any, path: string): unknown {
 }
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
-    const [lang, setLang] = useState<Lang>("en");
+    const [lang, setLang] = useState<Lang>("es");
 
     const value = useMemo<I18nContextValue>(() => {
         const dict = translations[lang];
