@@ -1,6 +1,6 @@
-import "./styles/About.css";
-import Description from "./Description";
-import SlotMachine from "./SlotMachine";
+import "@/components/About/styles/About.css";
+import Description from "@/components/About/Description";
+import SlotMachine from "@/components/About/SlotMachine";
 import { useI18n } from "@/i18n/I18nProvider";
 
 export default function About() {

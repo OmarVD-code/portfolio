@@ -1,6 +1,6 @@
-import { projects } from "./projects.data";
-import ProjectCard from "./ProjectCard";
-import "./styles/Project.css";
+import { projects } from "@/components/Portfolio/projects.data";
+import ProjectCard from "@/components/Portfolio/ProjectCard";
+import "@/components/Portfolio/styles/Project.css";
 import { useI18n } from "@/i18n/I18nProvider";
 
 export default function ProjectsGrid() {

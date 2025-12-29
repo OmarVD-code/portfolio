@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
-import DiceFace from "./DiceFace";
-import DiceController from "./DiceController";
-import "./styles/Dice.css";
-import { skills } from "./skills.data";
+import DiceFace from "@/components/Skills/DiceFace";
+import DiceController from "@/components/Skills/DiceController";
+import "@/components/Skills/styles/Dice.css";
+import { skills } from "@/components/Skills/skills.data";
 import { useI18n } from "@/i18n/I18nProvider";
 
 export default function SkillsDice() {

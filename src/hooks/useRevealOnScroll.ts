@@ -24,7 +24,7 @@ export function useRevealOnScroll(
           autoFlippedRef.current = true;
 
           timeoutId = window.setTimeout(() => {
-            setFlipped(false); // revela el frente y se queda así
+            setFlipped(false);
           }, delay);
         }
       });

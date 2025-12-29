@@ -1,9 +1,9 @@
 import { useMemo, useState, useCallback, useEffect } from "react";
-import MenuButton from "./MenuButton";
-import { useActiveSection } from "../../hooks/useActiveSection";
-import { useNavigateSection } from "../../hooks/useNavigateSection";
-import { useI18n } from "../../i18n/I18nProvider";
-import "./styles/Navbar.css";
+import MenuButton from "@/components/Navbar/MenuButton";
+import { useActiveSection } from "@/hooks/useActiveSection";
+import { useNavigateSection } from "@/hooks/useNavigateSection";
+import { useI18n } from "@/i18n/I18nProvider";
+import "@/components/Navbar/styles/Navbar.css";
 
 const SECTIONS = ["wallpaper_", "about_", "portfolio_", "skillset_", "contact_"] as const;
 type SectionId = (typeof SECTIONS)[number];

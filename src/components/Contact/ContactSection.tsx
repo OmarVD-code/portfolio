@@ -1,5 +1,5 @@
-import ContactForm from "./ContactForm";
-import "./styles/Contact.css";
+import ContactForm from "@/components/Contact/ContactForm";
+import "@/components/Contact/styles/Contact.css";
 import { useI18n } from "@/i18n/I18nProvider";
 
 export default function ContactSection() {

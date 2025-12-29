@@ -1,5 +1,5 @@
-import "./styles/Welcome.css";
-import { useNavigateSection } from "../../hooks/useNavigateSection";
+import "@/components/Hero/styles/Welcome.css";
+import { useNavigateSection } from "@/hooks/useNavigateSection";
 import { useI18n } from "@/i18n/I18nProvider";
 
 export default function Welcome() {

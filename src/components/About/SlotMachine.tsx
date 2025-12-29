@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
-import { useNavigateSection } from "../../hooks/useNavigateSection";
+import { useNavigateSection } from "@/hooks/useNavigateSection";
+import { useI18n } from "@/i18n/I18nProvider";
+
 type SymbolType = "cv" | "github" | "linkedin" | "projects" | "contact";
 const SYMBOLS: SymbolType[] = ["cv", "github", "linkedin", "projects", "contact"];
-import { useI18n } from "@/i18n/I18nProvider";
 
 export default function SlotMachine() {
     const { t } = useI18n();
