@@ -34,7 +34,7 @@ export const translations = {
             },
             2: {
                 title: "Vegas-Inspired Interactive Portfolio",
-                desc: "I worked on this project to create a social media sharing platform using Amazon DynamoDB. The project was a long-term product developed through continuous iterations and agile sprints. My role involved developing new features, enhancing existing modules, maintaining production code, and optimizing database queries to improve performance and stability.",
+                desc: "This project combines custom animations, interactive components, and smooth navigation to present my profile, skills, and projects in a memorable and engaging way. A component-based architecture was prioritized, with component reusability, UI state management, internationalization (i18n), and careful attention to visual detail, performance, and overall user experience. This project showcases my focus on UX, technical creativity, and advanced frontend development, balancing strong visual design with well-structured and maintainable code.",
             },
             3: {
                 title: "AMG Soft",
@@ -103,7 +103,7 @@ export const translations = {
             },
             2: {
                 title: "Portafolio Interactivo basado en Las Vegas",
-                desc: "Trabajé en este proyecto para crear una plataforma de compartición de medios sociales utilizando Amazon DynamoDB. El proyecto fue un producto de largo plazo desarrollado a través de iteraciones continuas y sprints ágiles. Mi rol incluyó el desarrollo de nuevas funcionalidades, la mejora de módulos existentes, el mantenimiento de código en producción y la optimización de consultas a base de datos para mejorar el rendimiento y la estabilidad del sistema.",
+                desc: "Este proyecto combina animaciones personalizadas, componentes interactivos y navegación fluida para presentar mi perfil, habilidades y proyectos de una forma memorable. Se priorizó una arquitectura basada en componentes, reutilización, control del estado de la UI, internacionalización (i18n) y una atención especial al detalle visual, rendimiento y experiencia de usuario. Este proyecto demuestra mi enfoque en UX, creatividad técnica y desarrollo frontend avanzado, cuidando tanto la estética como la estructura del código.",
             },
             3: {
                 title: "AMG Soft",

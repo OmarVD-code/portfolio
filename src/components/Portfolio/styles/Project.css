@@ -24,8 +24,10 @@
 
 .project-body {
     padding: 10px 20px;
-    text-align: justify;
+    /* text-align: justify; */
     color: rgba(255, 255, 255, .86);
+    max-height: 50%;
+    overflow-y: auto;
 }
 
 .project-body strong {

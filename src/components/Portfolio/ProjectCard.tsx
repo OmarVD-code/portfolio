@@ -31,8 +31,12 @@ export default function ProjectCard({ title, desc, img, tools, demo, code, is_co
                         <img src={img} alt={title} />
                     </div>
                     <div className="project-body">
-                        <strong>{t(title)}</strong>
-                        <p>{t(desc)}</p>
+                        <div className="project-title">
+                            <strong>{t(title)}</strong>
+                        </div>
+                        <div className="project-description">
+                            <p>{t(desc)}</p>
+                        </div>
                         <div className="project-tools">
                             {tools.map(t => (
                                 <span key={t} className="tag">
