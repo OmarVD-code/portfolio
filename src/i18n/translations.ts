@@ -37,8 +37,8 @@ export const translations = {
                 desc: "This project combines custom animations, interactive components, and smooth navigation to present my profile, skills, and projects in a memorable and engaging way. A component-based architecture was prioritized, with component reusability, UI state management, internationalization (i18n), and careful attention to visual detail, performance, and overall user experience. This project showcases my focus on UX, technical creativity, and advanced frontend development, balancing strong visual design with well-structured and maintainable code.",
             },
             3: {
-                title: "AMG Soft",
-                desc: "I worked for over 3 years on this large internal enterprise system used to manage multiple core business processes across the company. The project was a long-term product developed through continuous iterations and agile sprints. My role involved developing new features, enhancing existing modules, maintaining production code, and optimizing database queries to improve performance and stability.",
+                title: "Heroes SPA (AWS Serverless)",
+                desc: "A Single Page Application (SPA) built with Angular that consumes a serverless REST API on AWS, deployed using a modern, scalable cloud architecture. The application displays Marvel and DC superheroes, including search functionality, hero detail pages, and optimized content delivery via CDN.",
             }
         },
         skills: {
@@ -106,8 +106,8 @@ export const translations = {
                 desc: "Este proyecto combina animaciones personalizadas, componentes interactivos y navegación fluida para presentar mi perfil, habilidades y proyectos de una forma memorable. Se priorizó una arquitectura basada en componentes, reutilización, control del estado de la UI, internacionalización (i18n) y una atención especial al detalle visual, rendimiento y experiencia de usuario. Este proyecto demuestra mi enfoque en UX, creatividad técnica y desarrollo frontend avanzado, cuidando tanto la estética como la estructura del código.",
             },
             3: {
-                title: "AMG Soft",
-                desc: "Trabajé durante más de 3 años en este gran sistema interno empresarial, utilizado para gestionar múltiples procesos clave del negocio dentro de la compañía. El proyecto fue un producto de largo plazo, desarrollado mediante iteraciones continuas y sprints ágiles. Mi rol incluyó el desarrollo de nuevas funcionalidades, la mejora de módulos existentes, el mantenimiento de código en producción y la optimización de consultas a base de datos para mejorar el rendimiento y la estabilidad del sistema.",
+                title: "Heroes SPA (AWS Serverless)",
+                desc: "Aplicación web Single Page Application (SPA) desarrollada en Angular que consume una API serverless en AWS, desplegada con arquitectura moderna y escalable. El proyecto muestra un listado de superhéroes de Marvel y DC, con búsqueda dinámica, vista de detalle y carga optimizada mediante CDN.",
             }
         },
         skills: {

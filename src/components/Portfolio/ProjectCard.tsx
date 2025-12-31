@@ -8,10 +8,11 @@ type Props = {
     tools: string[];
     demo: string;
     code: string;
-    is_code_available: boolean;
+    show_code: boolean;
+    show_demo: boolean;
 };
 
-export default function ProjectCard({ title, desc, img, tools, demo, code, is_code_available }: Props) {
+export default function ProjectCard({ title, desc, img, tools, demo, code, show_code, show_demo }: Props) {
     const { cardRef, flipped, toggleFlipped } = useRevealOnScroll({
         delay: 600,
         initialFlipped: true,
@@ -46,11 +47,11 @@ export default function ProjectCard({ title, desc, img, tools, demo, code, is_co
                         </div>
                     </div>
                     <div className="project-footer">
-                        <a href={demo} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title="Demo"
+                        {show_demo && <a href={demo} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title="Demo"
                         >
                             <i className="fab fa-chrome" />
-                        </a>
-                        {is_code_available && <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title={t("projects.code")}
+                        </a>}
+                        {show_code && <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title={t("projects.code")}
                         >
                             <i className="fab fa-github" />
                         </a>}
