@@ -38,7 +38,7 @@ export const translations = {
             },
             3: {
                 title: "Heroes SPA (AWS Serverless)",
-                desc: "A Single Page Application (SPA) built with Angular that consumes a serverless REST API on AWS, deployed using a modern, scalable cloud architecture. The application displays Marvel and DC superheroes, including search functionality, hero detail pages, and optimized content delivery via CDN.",
+                desc: "Angular SPA connected to a serverless architecture on AWS (Lambda, API Gateway, DynamoDB). Static content is delivered from S3 using CloudFront as a CDN for improved performance. A CI/CD pipeline powered by GitHub Actions automates the build process, deployment to S3, and CloudFront cache invalidation, ensuring consistent and continuous delivery on every commit.",
             }
         },
         skills: {
@@ -107,7 +107,7 @@ export const translations = {
             },
             3: {
                 title: "Heroes SPA (AWS Serverless)",
-                desc: "Aplicación web Single Page Application (SPA) desarrollada en Angular que consume una API serverless en AWS, desplegada con arquitectura moderna y escalable. El proyecto muestra un listado de superhéroes de Marvel y DC, con búsqueda dinámica, vista de detalle y carga optimizada mediante CDN.",
+                desc: "SPA en Angular conectada a una arquitectura serverless en AWS (Lambda, API Gateway, DynamoDB). Entrega contenido estático desde S3 con CloudFront como CDN para mejor performance. Pipeline CI/CD con GitHub Actions que automatiza build, deploy a S3 e invalidación de CloudFront, garantizando entregas continuas y consistentes con cada commit.",
             }
         },
         skills: {

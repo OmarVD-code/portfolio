@@ -26,7 +26,7 @@ export const projects = [
         title: "projects.3.title",
         desc: "projects.3.desc",
         img: "src/assets/img/projects/project-comic.png",
-        tools: ["Angular", "TypeScript", "AWS Lambda", "Amazon API Gateway", "Amazon DynamoDB"],
+        tools: ["Angular", "TypeScript", "AWS Lambda", "API Gateway", "DynamoDB", "CI/CD", "GitHub Actions"],
         demo: "https://dsbhayu79n54j.cloudfront.net/#/heroes",
         code: "https://github.com/OmarVD-code/marvel-dc-comic",
         show_code: true,
