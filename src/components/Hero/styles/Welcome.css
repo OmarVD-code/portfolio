@@ -25,11 +25,11 @@
 
 .sign {
   position: absolute;
-  top: 54%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg) skew(0deg, 0deg);
   width: 250px;
-  height: 550px;
+  height: clamp(550px, 85vh, 600px);
   background:
     radial-gradient(140% 100% at 50% 0%, rgba(255, 255, 255, 0.05), transparent 60%),
     linear-gradient(180deg, #ece6e6 0%, #7a7a79 100%);
@@ -56,7 +56,7 @@
 
 .text {
   position: absolute;
-  top: 36%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;

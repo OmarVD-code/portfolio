@@ -1,5 +1,6 @@
 import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 import { useI18n } from "@/i18n/I18nProvider";
+import blackCardBack from "@/assets/img/blackcardback.png";
 
 type Props = {
     title: string;
@@ -59,7 +60,7 @@ export default function ProjectCard({ title, desc, img, tools, demo, code, show_
                 </div>
 
                 <div className="flip-card-back">
-                    <img src="src/assets/img/blackcardback.png" alt="Card back" />
+                    <img src={blackCardBack} alt="Black card back" />
                 </div>
             </div>
         </div>
