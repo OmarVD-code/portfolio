@@ -1,6 +1,12 @@
 import { useRef, useState } from "react";
 import { useNavigateSection } from "@/hooks/useNavigateSection";
 import { useI18n } from "@/i18n/I18nProvider";
+import cvIcon from "@/assets/img/about/cv.png";
+import githubIcon from "@/assets/img/about/github.png";
+import linkedinIcon from "@/assets/img/about/linkedin.png";
+import folderIcon from "@/assets/img/about/folder.png";
+import emailIcon from "@/assets/img/about/email.png";
+
 
 type SymbolType = "cv" | "github" | "linkedin" | "projects" | "contact";
 const SYMBOLS: SymbolType[] = ["cv", "github", "linkedin", "projects", "contact"];
@@ -53,7 +59,7 @@ export default function SlotMachine() {
                                         title="Download CV"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="src/assets/img/about/cv.png" alt="Resume" />
+                                        <img src={cvIcon} alt="Resume" />
                                     </a>
                                 )}
 
@@ -64,7 +70,7 @@ export default function SlotMachine() {
                                         title="GitHub"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="src/assets/img/about/github.png" alt="GitHub" />
+                                        <img src={githubIcon} alt="GitHub" />
                                     </a>
                                 )}
 
@@ -75,7 +81,7 @@ export default function SlotMachine() {
                                         title="LinkedIn"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="src/assets/img/about/linkedin.png" alt="Linkedin" />
+                                        <img src={linkedinIcon} alt="Linkedin" />
                                     </a>
                                 )}
 
@@ -84,7 +90,7 @@ export default function SlotMachine() {
                                         onClick={() => navigate("portfolio_")}
                                         title={t("about.projects")}
                                     >
-                                        <img src="src/assets/img/about/folder.png" alt="Projects" />
+                                        <img src={folderIcon} alt="Projects" />
                                     </span>
                                 )}
 
@@ -93,7 +99,7 @@ export default function SlotMachine() {
                                         onClick={() => navigate("contact_")}
                                         title={t("about.contact")}
                                     >
-                                        <img src="src/assets/img/about/email.png" alt="Contact Me" />
+                                        <img src={emailIcon} alt="Contact Me" />
                                     </span>
                                 )}
                             </div>

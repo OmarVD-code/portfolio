@@ -1,6 +1,8 @@
 import "@/components/Hero/styles/Welcome.css";
 import { useNavigateSection } from "@/hooks/useNavigateSection";
 import { useI18n } from "@/i18n/I18nProvider";
+import myPic from "@/assets/img/photo.jpg";
+
 
 export default function Welcome() {
     const navigate = useNavigateSection();
@@ -27,7 +29,7 @@ export default function Welcome() {
                 <div className="nv">SOFTWARE <br className="breaker" />DEVELOPER</div>
                 <img
                     className="photo"
-                    src="src/assets/img/photo.jpg"
+                    src={myPic}
                     alt="Me"
                 />
                 <button

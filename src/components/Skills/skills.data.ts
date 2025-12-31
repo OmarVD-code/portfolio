@@ -1,3 +1,25 @@
+import typeScriptSvg from "@/assets/img/skills/typescript-original.svg";
+import bootstrapSvg from "@/assets/img/skills/bootstrap-original.svg";
+import angularjsSvg from "@/assets/img/skills/angularjs-original.svg";
+import reactSvg from "@/assets/img/skills/react-original.svg";
+import vuejsSvg from "@/assets/img/skills/vuejs-original.svg";
+import nodejsSvg from "@/assets/img/skills/nodejs-original.svg";
+import nestjsSvg from "@/assets/img/skills/nestjs-original.svg";
+import pythonSvg from "@/assets/img/skills/python-original.svg";
+import flaskSvg from "@/assets/img/skills/flask-original.svg";
+import phpSvg from "@/assets/img/skills/php-original.svg";
+import laravelSvg from "@/assets/img/skills/laravel-original.svg";
+import mysqlSvg from "@/assets/img/skills/mysql-original.svg";
+import mongodbSvg from "@/assets/img/skills/mongodb-original.svg";
+import microsoftsqlserverSvg from "@/assets/img/skills/microsoftsqlserver-original.svg";
+import amazonwebservicesSvg from "@/assets/img/skills/amazonwebservices-original-wordmark.svg";
+import dockerSvg from "@/assets/img/skills/docker-original.svg";
+import gitSvg from "@/assets/img/skills/git-original.svg";
+import githubSvg from "@/assets/img/skills/github-original.svg";
+import npmSvg from "@/assets/img/skills/npm-original-wordmark.svg";
+import spanishSvg from "@/assets/img/languages/es.svg";
+import englishSvg from "@/assets/img/languages/gb.svg";
+
 export const skills = [
     {
         id: 1,
@@ -6,25 +28,23 @@ export const skills = [
         items: [
             {
                 name: "TypeScript",
-                img: "src/assets/img/skills/typescript-original.svg"
-
+                img: typeScriptSvg
             },
             {
                 name: "Bootstrap",
-                img: "src/assets/img/skills/bootstrap-original.svg"
-
+                img: bootstrapSvg
             },
             {
                 name: "Angular",
-                img: "src/assets/img/skills/angularjs-original.svg"
+                img: angularjsSvg
             },
             {
                 name: "React",
-                img: "src/assets/img/skills/react-original.svg"
+                img: reactSvg
             },
             {
                 name: "Vue.js",
-                img: "src/assets/img/skills/vuejs-original.svg"
+                img: vuejsSvg
             }
         ]
     },
@@ -35,27 +55,27 @@ export const skills = [
         items: [
             {
                 name: "Node.js",
-                img: "src/assets/img/skills/nodejs-original.svg"
+                img: nodejsSvg
             },
             {
                 name: "NestJS",
-                img: "src/assets/img/skills/nestjs-original.svg"
+                img: nestjsSvg
             },
             {
                 name: "Python",
-                img: "src/assets/img/skills/python-original.svg"
+                img: pythonSvg
             },
             {
                 name: "Flask",
-                img: "src/assets/img/skills/flask-original.svg"
+                img: flaskSvg
             },
             {
                 name: "PHP",
-                img: "src/assets/img/skills/php-original.svg"
+                img: phpSvg
             },
             {
                 name: "Laravel",
-                img: "src/assets/img/skills/laravel-original.svg"
+                img: laravelSvg
             }
         ]
     },
@@ -66,15 +86,15 @@ export const skills = [
         items: [
             {
                 name: "MySQL",
-                img: "src/assets/img/skills/mysql-original.svg"
+                img: mysqlSvg
             },
             {
                 name: "MongoDB",
-                img: "src/assets/img/skills/mongodb-original.svg"
+                img: mongodbSvg
             },
             {
                 name: "Microsoft SQL Server",
-                img: "src/assets/img/skills/microsoftsqlserver-original.svg"
+                img: microsoftsqlserverSvg
             }
         ]
     },
@@ -85,11 +105,11 @@ export const skills = [
         items: [
             {
                 name: "AWS",
-                img: "src/assets/img/skills/amazonwebservices-original-wordmark.svg"
+                img: amazonwebservicesSvg
             },
             {
                 name: "Docker",
-                img: "src/assets/img/skills/docker-original.svg"
+                img: dockerSvg
             }
         ]
     },
@@ -100,15 +120,15 @@ export const skills = [
         items: [
             {
                 name: "Git",
-                img: "src/assets/img/skills/git-original.svg"
+                img: gitSvg
             },
             {
                 name: "GitHub",
-                img: "src/assets/img/skills/github-original.svg"
+                img: githubSvg
             },
             {
                 name: "npm",
-                img: "src/assets/img/skills/npm-original-wordmark.svg"
+                img: npmSvg
             },
         ]
     },
@@ -119,11 +139,11 @@ export const skills = [
         items: [
             {
                 name: "Spanish",
-                img: "src/assets/img/languages/es.svg"
+                img: spanishSvg
             },
             {
                 name: "English",
-                img: "src/assets/img/languages/gb.svg"
+                img: englishSvg
             },
         ]
     },

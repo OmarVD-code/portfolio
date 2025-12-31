@@ -4,6 +4,10 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import { useNavigateSection } from "@/hooks/useNavigateSection";
 import { useI18n } from "@/i18n/I18nProvider";
 import "@/components/Navbar/styles/Navbar.css";
+import pokerChip from "@/assets/img/pokerchip.png";
+import spanishSvg from "@/assets/img/languages/es.svg";
+import englishSvg from "@/assets/img/languages/gb.svg";
+
 
 const SECTIONS = ["wallpaper_", "about_", "portfolio_", "skillset_", "contact_"] as const;
 type SectionId = (typeof SECTIONS)[number];
@@ -49,7 +53,7 @@ export default function Navbar() {
             <div className="nav-items">
                 <div className="nav-logo">
                     <img
-                        src="src/assets/img/pokerchip.png"
+                        src={pokerChip}
                         alt="Logo"
                         width="50"
                         height="50"
@@ -82,7 +86,7 @@ export default function Navbar() {
                         aria-label="Cambiar a Español"
                         type="button"
                     >
-                        <img src="src/assets/img/languages/es.svg" alt="Español" />
+                        <img src={spanishSvg} alt="Español" />
                     </button>
 
                     <span className="sep">|</span>
@@ -93,7 +97,7 @@ export default function Navbar() {
                         aria-label="Switch to English"
                         type="button"
                     >
-                        <img src="src/assets/img/languages/gb.svg" alt="English" />
+                        <img src={englishSvg} alt="English" />
                     </button>
                 </div>
 
