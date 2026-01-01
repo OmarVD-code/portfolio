@@ -30,15 +30,15 @@ export const translations = {
             code: "Code",
             1: {
                 title: "AMG Soft",
-                desc: "I worked for over 3 years on this large internal enterprise system used to manage multiple core business processes across the company. The project was a long-term product developed through continuous iterations and agile sprints. My role involved developing new features, enhancing existing modules, maintaining production code, and optimizing database queries to improve performance and stability.",
+                desc: "I was part of a team delivering features under agile methodologies (Scrum), focusing on code refactoring, component standardization, and database query optimization. Later, I assumed the role of technical supervisor, leading my own team, coordinating tasks, performing code reviews, and ensuring deliveries met defined timelines. Priority was given to query optimization, system modularization, and the continuous improvement of the existing architecture.",
             },
             2: {
                 title: "Vegas-Inspired Interactive Portfolio",
-                desc: "This project combines custom animations, interactive components, and smooth navigation to present my profile, skills, and projects in a memorable and engaging way. A component-based architecture was prioritized, with component reusability, UI state management, internationalization (i18n), and careful attention to visual detail, performance, and overall user experience. This project showcases my focus on UX, technical creativity, and advanced frontend development, balancing strong visual design with well-structured and maintainable code.",
+                desc: "I rebuilt my portfolio using React and a component-based architecture, applying a Las Vegas–inspired design to strengthen my frontend profile and visual creativity. The goal was to balance my strong backend background with an attractive, modern, and well-structured interface, prioritizing component reusability, smooth navigation, and user experience.",
             },
             3: {
                 title: "Heroes SPA (AWS Serverless)",
-                desc: "Angular SPA connected to a serverless architecture on AWS (Lambda, API Gateway, DynamoDB). Static content is delivered from S3 using CloudFront as a CDN for improved performance. A CI/CD pipeline powered by GitHub Actions automates the build process, deployment to S3, and CloudFront cache invalidation, ensuring consistent and continuous delivery on every commit.",
+                desc: "I leveraged this project as an opportunity to demonstrate my knowledge of AWS by transforming it into an application connected to a serverless architecture. I implemented a real API using AWS Lambda and API Gateway, data persistence with DynamoDB, and an automated CI/CD pipeline using GitHub Actions, taking the project beyond a purely tutorial-based approach.",
             }
         },
         skills: {
@@ -99,15 +99,15 @@ export const translations = {
             code: "Código",
             1: {
                 title: "AMG Soft",
-                desc: "Trabajé durante más de 3 años en este gran sistema interno empresarial, utilizado para gestionar múltiples procesos clave del negocio dentro de la compañía. El proyecto fue un producto de largo plazo, desarrollado mediante iteraciones continuas y sprints ágiles. Mi rol incluyó el desarrollo de nuevas funcionalidades, la mejora de módulos existentes, el mantenimiento de código en producción y la optimización de consultas a base de datos para mejorar el rendimiento y la estabilidad del sistema.",
+                desc: "Formé parte de un equipo que entregaba funcionalidades bajo metodologías ágiles (Scrum), enfocándonos en refactorizar código, estandarizar componentes y optimizar consultas a base de datos. Posteriormente, asumí el rol de supervisor técnico, liderando un equipo propio, coordinando tareas, revisando código y asegurando entregas dentro de los plazos definidos. Se priorizó la optimización de queries, la modularización del sistema y la mejora progresiva de la arquitectura existente.",
             },
             2: {
                 title: "Portafolio Interactivo basado en Las Vegas",
-                desc: "Este proyecto combina animaciones personalizadas, componentes interactivos y navegación fluida para presentar mi perfil, habilidades y proyectos de una forma memorable. Se priorizó una arquitectura basada en componentes, reutilización, control del estado de la UI, internacionalización (i18n) y una atención especial al detalle visual, rendimiento y experiencia de usuario. Este proyecto demuestra mi enfoque en UX, creatividad técnica y desarrollo frontend avanzado, cuidando tanto la estética como la estructura del código.",
+                desc: "Reconstruí mi portafolio utilizando React y una arquitectura basada en componentes, aplicando un diseño inspirado en Las Vegas para reforzar mi perfil frontend y creatividad visual. El objetivo fue equilibrar mi fuerte enfoque backend con una interfaz atractiva, moderna y bien estructurada, priorizando reutilización de componentes, navegación fluida y experiencia de usuario.",
             },
             3: {
                 title: "Heroes SPA (AWS Serverless)",
-                desc: "SPA en Angular conectada a una arquitectura serverless en AWS (Lambda, API Gateway, DynamoDB). Entrega contenido estático desde S3 con CloudFront como CDN para mejor performance. Pipeline CI/CD con GitHub Actions que automatiza build, deploy a S3 e invalidación de CloudFront, garantizando entregas continuas y consistentes con cada commit.",
+                desc: "Aproveché este proyecto como una oportunidad para demostrar mis conocimientos en AWS, transformándolo en una aplicación conectada a una arquitectura serverless. Implementé una API real con AWS Lambda y API Gateway, persistencia en DynamoDB y un pipeline CI/CD automatizado con GitHub Actions, llevando el proyecto más allá del enfoque tutorial.",
             }
         },
         skills: {
