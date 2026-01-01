@@ -38,7 +38,7 @@ export const translations = {
             },
             3: {
                 title: "Heroes SPA (AWS Serverless)",
-                desc: "I leveraged this project as an opportunity to demonstrate my knowledge of AWS by transforming it into an application connected to a serverless architecture. I implemented a real API using AWS Lambda and API Gateway, data persistence with DynamoDB, and an automated CI/CD pipeline using GitHub Actions, taking the project beyond a purely tutorial-based approach.",
+                desc: "I took this project as an opportunity to demonstrate my knowledge of AWS by transforming it into an application connected to a serverless architecture. I implemented a real API using AWS Lambda and API Gateway, data persistence with DynamoDB, and an automated CI/CD pipeline using GitHub Actions, taking the project beyond a purely tutorial-based approach.",
             }
         },
         skills: {
@@ -107,7 +107,7 @@ export const translations = {
             },
             3: {
                 title: "Heroes SPA (AWS Serverless)",
-                desc: "Aproveché este proyecto como una oportunidad para demostrar mis conocimientos en AWS, transformándolo en una aplicación conectada a una arquitectura serverless. Implementé una API real con AWS Lambda y API Gateway, persistencia en DynamoDB y un pipeline CI/CD automatizado con GitHub Actions, llevando el proyecto más allá del enfoque tutorial.",
+                desc: "Tomé este proyecto como una oportunidad para demostrar mis conocimientos en AWS, transformándolo en una aplicación conectada a una arquitectura serverless. Implementé una API real con AWS Lambda y API Gateway, persistencia en DynamoDB y un pipeline CI/CD automatizado con GitHub Actions, llevando el proyecto más allá del enfoque tutorial.",
             }
         },
         skills: {
