@@ -24,6 +24,7 @@ export const translations = {
             phone: "Phone",
             projects: "Projects",
             contact: "Contact",
+            download_cv: "Download CV",
         },
         projects: {
             marquee: "HERE ARE SOME PROJECTS I'VE WORKED ON",
@@ -93,6 +94,7 @@ export const translations = {
             phone: "Teléfono",
             projects: "Proyectos",
             contact: "Contacto",
+            download_cv: "Descargar CV",
         },
         projects: {
             marquee: "AQUÍ ALGUNOS PROYECTOS EN LOS QUE HE TRABAJADO",

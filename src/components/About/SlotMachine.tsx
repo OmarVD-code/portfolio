@@ -12,7 +12,13 @@ type SymbolType = "cv" | "github" | "linkedin" | "projects" | "contact";
 const SYMBOLS: SymbolType[] = ["cv", "github", "linkedin", "projects", "contact"];
 
 export default function SlotMachine() {
-    const { t } = useI18n();
+    const { t, lang } = useI18n();
+
+    const cvHref =
+        lang === "es"
+            ? "/cv/es.pdf"
+            : "/cv/en.pdf";
+
 
     const leverOuterRef = useRef<HTMLDivElement | null>(null);
     const navigate = useNavigateSection();
@@ -54,9 +60,9 @@ export default function SlotMachine() {
                             <div className="reel" key={i}>
                                 {symbol === "cv" && (
                                     <a
-                                        href="/cv/omarVillarreal.pdf"
+                                        href={cvHref}
                                         target="_blank"
-                                        title="Download CV"
+                                        title={t("about.download_cv")}
                                         rel="noopener noreferrer"
                                     >
                                         <img src={cvIcon} alt="Resume" />
