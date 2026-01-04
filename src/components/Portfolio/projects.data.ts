@@ -1,6 +1,7 @@
 import projectAmg from "@/assets/img/projects/project-amg.png";
 import projectPortfolio from "@/assets/img/projects/project-portfolio.png";
 import projectComic from "@/assets/img/projects/project-comic.png";
+import projectAgro from "@/assets/img/projects/project-agro.png";
 
 export const projects = [
     {
@@ -35,5 +36,16 @@ export const projects = [
         code: "https://github.com/OmarVD-code/marvel-dc-comic",
         show_code: true,
         show_demo: true,
+    },
+    {
+        id: 4,
+        title: "projects.4.title",
+        desc: "projects.4.desc",
+        img: projectAgro,
+        tools: ["Vue.js", "Laravel", "MySQL", "Sass", "PhpSpreadsheet", "Laravel Auth", "Custom middlewares"],
+        demo: "",
+        code: "https://github.com/OmarVD-code/agroproject/tree/master",
+        show_code: true,
+        show_demo: false,
     },
 ];

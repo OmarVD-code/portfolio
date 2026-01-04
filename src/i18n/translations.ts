@@ -40,6 +40,10 @@ export const translations = {
             3: {
                 title: "Heroes SPA (AWS Serverless)",
                 desc: "I took this project as an opportunity to demonstrate my knowledge of AWS by transforming it into an application connected to a serverless architecture. I implemented a real API using AWS Lambda and API Gateway, data persistence with DynamoDB, and an automated CI/CD pipeline using GitHub Actions, taking the project beyond a purely tutorial-based approach.",
+            },
+            4: {
+                title: "Laravel Web Application",
+                desc: "The project implements access control through middleware (auth / guest) and an additional layer of security and UX that prevents cached views after login or logout, ensuring a consistent navigation. Priority was given to a clear architecture, separation of responsibilities, and good practices at the route, middleware, and session handling level, offering a solid and scalable foundation for enterprise applications.",
             }
         },
         skills: {
@@ -110,6 +114,10 @@ export const translations = {
             3: {
                 title: "Heroes SPA (AWS Serverless)",
                 desc: "Tomé este proyecto como una oportunidad para demostrar mis conocimientos en AWS, transformándolo en una aplicación conectada a una arquitectura serverless. Implementé una API real con AWS Lambda y API Gateway, persistencia en DynamoDB y un pipeline CI/CD automatizado con GitHub Actions, llevando el proyecto más allá del enfoque tutorial.",
+            },
+            4: {
+                title: "Sistema web desarrollado con Laravel",
+                desc: "El proyecto implementa control de acceso mediante middleware (auth / guest) y una capa adicional de seguridad y UX que evita el uso de vistas cacheadas tras login o logout, garantizando una navegación consistente. Se priorizó una arquitectura clara, separación de responsabilidades y buenas prácticas a nivel de rutas, middleware y manejo de sesión, ofreciendo una base sólida y escalable para aplicaciones empresariales.",
             }
         },
         skills: {
