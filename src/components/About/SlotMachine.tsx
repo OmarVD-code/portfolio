@@ -48,82 +48,93 @@ export default function SlotMachine() {
     };
 
     return (
-        <div className="machine-wrapper">
+        <div className="machine-wrap">
             <div
                 className="slot-machine"
                 role="application"
                 aria-label="Slot Machine"
             >
+                <header className="machine-marquee">
+                    <span className="about-marquee__dot"></span>
+                    <span className="about-marquee__dot"></span>
+                    <span className="about-marquee__dot"></span>
+                    <h3 className="about-title">{t("about.title_slot_machine")}</h3>
+                    <span className="about-marquee__dot"></span>
+                    <span className="about-marquee__dot"></span>
+                    <span className="about-marquee__dot"></span>
+                </header>
                 <div className="machine-body">
-                    <div className="reel-window">
-                        {reels.map((symbol, i) => (
-                            <div className="reel" key={i}>
-                                {symbol === "cv" && (
-                                    <a
-                                        href={cvHref}
-                                        target="_blank"
-                                        title={t("about.download_cv")}
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img src={cvIcon} alt="Resume" />
-                                    </a>
-                                )}
+                    <div className="machine-controls">
+                        <div className="reel-window">
+                            {reels.map((symbol, i) => (
+                                <div className="reel" key={i}>
+                                    {symbol === "cv" && (
+                                        <a
+                                            href={cvHref}
+                                            target="_blank"
+                                            title={t("about.download_cv")}
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img src={cvIcon} alt="Resume" />
+                                        </a>
+                                    )}
 
-                                {symbol === "github" && (
-                                    <a
-                                        href="https://github.com/OmarVD-code"
-                                        target="_blank"
-                                        title="GitHub"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img src={githubIcon} alt="GitHub" />
-                                    </a>
-                                )}
+                                    {symbol === "github" && (
+                                        <a
+                                            href="https://github.com/OmarVD-code"
+                                            target="_blank"
+                                            title="GitHub"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img src={githubIcon} alt="GitHub" />
+                                        </a>
+                                    )}
 
-                                {symbol === "linkedin" && (
-                                    <a
-                                        href="https://www.linkedin.com/in/omar-villarreal1"
-                                        target="_blank"
-                                        title="LinkedIn"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img src={linkedinIcon} alt="Linkedin" />
-                                    </a>
-                                )}
+                                    {symbol === "linkedin" && (
+                                        <a
+                                            href="https://www.linkedin.com/in/omar-villarreal1"
+                                            target="_blank"
+                                            title="LinkedIn"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img src={linkedinIcon} alt="Linkedin" />
+                                        </a>
+                                    )}
 
-                                {symbol === "projects" && (
-                                    <span
-                                        onClick={() => navigate("portfolio_")}
-                                        title={t("about.projects")}
-                                    >
-                                        <img src={folderIcon} alt="Projects" />
-                                    </span>
-                                )}
+                                    {symbol === "projects" && (
+                                        <span
+                                            onClick={() => navigate("portfolio_")}
+                                            title={t("about.projects")}
+                                        >
+                                            <img src={folderIcon} alt="Projects" />
+                                        </span>
+                                    )}
 
-                                {symbol === "contact" && (
-                                    <span
-                                        onClick={() => navigate("contact_")}
-                                        title={t("about.contact")}
-                                    >
-                                        <img src={emailIcon} alt="Contact Me" />
-                                    </span>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-
-                    <button
-                        className="lever"
-                        onClick={spinOnce}
-                        aria-label="Pull lever to spin"
-                    >
-                        <div className="lever-outer" ref={leverOuterRef}>
-                            <div className="lever-inner">
-                                <div className="lever-stick" />
-                                <div className="lever-knob" />
-                            </div>
+                                    {symbol === "contact" && (
+                                        <span
+                                            onClick={() => navigate("contact_")}
+                                            title={t("about.contact")}
+                                        >
+                                            <img src={emailIcon} alt="Contact Me" />
+                                        </span>
+                                    )}
+                                </div>
+                            ))}
                         </div>
-                    </button>
+
+                        <button
+                            className="lever"
+                            onClick={spinOnce}
+                            aria-label="Pull lever to spin"
+                        >
+                            <div className="lever-outer" ref={leverOuterRef}>
+                                <div className="lever-inner">
+                                    <div className="lever-stick" />
+                                    <div className="lever-knob" />
+                                </div>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

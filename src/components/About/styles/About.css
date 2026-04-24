@@ -20,13 +20,9 @@
     padding: 28px;
 }
 
-.about-card {
-    width: 40vw;
-    border-radius: 18px;
-    position: relative;
+.about-card,
+.slot-machine {
     overflow: hidden;
-    height: 50vh;
-
     border: 3px solid var(--gold-3);
     border-radius: var(--radius-lg);
     box-shadow:
@@ -34,11 +30,13 @@
         inset 0 0 24px var(--crimson-glow),
         0 0 14px rgba(0, 0, 0, 0.8),
         0 0 36px var(--gold-glow);
-
     background:
         radial-gradient(1100px 420px at 20% 0%, rgba(255, 215, 128, .10), transparent 55%),
         radial-gradient(900px 380px at 90% 30%, rgba(255, 120, 64, .08), transparent 60%),
         linear-gradient(180deg, #0b0c10 0%, #07070a 100%);
+    position: relative;
+    width: 40vw;
+    height: 50vh;
 }
 
 .about-card::before {
@@ -95,7 +93,6 @@
     font-size: 18px;
     color: #f7d56b;
     text-shadow: 0 0 18px rgba(247, 213, 107, .18);
-
     border: 1px solid rgba(247, 213, 107, .35);
     background: linear-gradient(180deg, rgba(20, 20, 20, .9), rgba(0, 0, 0, .55));
 }
@@ -140,36 +137,42 @@
     letter-spacing: .06em;
 }
 
-.machine-wrapper {
+.machine-wrap {
     width: 50%;
+    height: 100%;
     display: grid;
     place-items: center;
     text-align: center;
     padding: 24px;
 }
 
+.machine-marquee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .55));
+    border-bottom: 1px solid rgba(247, 213, 107, .25);
+    width: 100%;
+}
+
 .slot-machine {
-    position: relative;
-    width: 40vw;
-    height: 50vh;
-    background-image: url("/img/poker-banner.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 3px solid var(--gold-3);
-    border-radius: var(--radius-lg);
-    box-shadow:
-        inset 0 0 40px rgba(0, 0, 0, 0.6),
-        inset 0 0 24px var(--crimson-glow),
-        0 0 14px rgba(0, 0, 0, 0.8),
-        0 0 36px var(--gold-glow);
-    overflow: hidden;
     padding: 22px;
 }
 
 .machine-body {
     position: absolute;
-    inset: 56px 18px 18px 18px;
+    inset: 170px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.machine-controls {
     display: grid;
     grid-template-columns: 1fr auto;
     /* reels | lever */
@@ -384,7 +387,7 @@
     }
 
     .about-wrap,
-    .machine-wrapper {
+    .machine-wrap {
         width: 50%;
     }
 
@@ -403,7 +406,7 @@
 
     .machine-body {
         position: relative;
-        inset: 18px;
+        inset: 120px 10px 10px 10px;
     }
 
     .slot-machine {
@@ -414,7 +417,6 @@
 
     .reel-window {
         grid-template-columns: 1fr 1fr 1fr;
-        height: 50%;
     }
 
     .reel {
@@ -435,9 +437,14 @@
     }
 
     .about-wrap,
-    .machine-wrapper {
+    .machine-wrap {
         width: 90%;
         padding: 10px 0;
+    }
+
+    .machine-body {
+        position: relative;
+        inset: 50px 10px 10px 10px;
     }
 
     .about-title {
@@ -450,12 +457,16 @@
     }
 
     .about-card {
-        height: 40vh;
+        height: 50vh;
         overflow-y: auto;
     }
 
     .slot-machine {
-        height: 30vh;
+        height: 50vh;
+    }
+
+    .reel-window {
+        height: 150px;
     }
 
     .about-body {

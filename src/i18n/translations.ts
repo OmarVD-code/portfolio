@@ -14,7 +14,7 @@ export const translations = {
         },
         about: {
             marquee: "Pull the lever and see what happens!",
-            title: "ABOUT ME",
+            title: "About Me",
             description: "Fullstack Developer with over 3 years of experience building real, business-oriented systems. I have worked on the development of critical modules, dashboards, end-to-end workflows, and business rules for production web applications. I have led and supervised other developers, supporting code reviews, technical decision-making, and architectural improvements, always focusing on code quality, maintainability, and performance.",
             experience: "Experience",
             years: "years",
@@ -25,6 +25,7 @@ export const translations = {
             projects: "Projects",
             contact: "Contact",
             download_cv: "Download CV",
+            title_slot_machine: "Relevant Links"
         },
         projects: {
             marquee: "HERE ARE SOME PROJECTS I'VE WORKED ON",
@@ -88,7 +89,7 @@ export const translations = {
         },
         about: {
             marquee: "¡Tire de la palanca y vea lo que sucede!",
-            title: "SOBRE MÍ",
+            title: "Sobre mí",
             description: "Desarrollador Fullstack con más de 3 años de experiencia construyendo sistemas reales orientados al negocio. He trabajado en el desarrollo de módulos críticos, dashboards, flujos completos y reglas de negocio para aplicaciones web en producción. He liderado y supervisado a otros desarrolladores, apoyando en revisiones de código, toma de decisiones técnicas y mejoras de arquitectura, siempre con foco en la calidad, mantenibilidad y rendimiento.",
             experience: "Experiencia",
             years: "años",
@@ -99,6 +100,7 @@ export const translations = {
             projects: "Proyectos",
             contact: "Contacto",
             download_cv: "Descargar CV",
+            title_slot_machine: "Links Relevantes"
         },
         projects: {
             marquee: "AQUÍ ALGUNOS PROYECTOS EN LOS QUE HE TRABAJADO",
