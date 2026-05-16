@@ -25,11 +25,11 @@
 
 .sign {
   position: absolute;
-  top: 62%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg) skew(0deg, 0deg);
   width: 250px;
-  height: clamp(550px, 85vh, 600px);
+  height: clamp(500px, 85vh, 600px);
   background:
     radial-gradient(140% 100% at 50% 0%, rgba(255, 255, 255, 0.05), transparent 60%),
     linear-gradient(180deg, #ece6e6 0%, #7a7a79 100%);
@@ -56,9 +56,9 @@
 
 .text {
   position: absolute;
-  top: 44%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
   text-align: center;
   white-space: nowrap;
   font-family: Helvetica, sans-serif;
@@ -276,6 +276,25 @@
   animation-delay: 0.40s;
 }
 
+@media (min-height: 800px) {
+  .sign {
+    top: 55%;
+  }
+}
+
+@media (min-height: 1100px) {
+  .sign {
+    top: 52.5%;
+  }
+}
+
+@media (min-height: 1366px) {
+  .sign {
+    top: 50%;
+  }
+}
+
+
 @media (min-width: 951px) {
   .sign {
     transform: translate(-50%, -50%) rotate(-45deg) skew(20deg, 20deg);
@@ -291,6 +310,7 @@
 
   .text {
     top: 48%;
+    transform: translate(-50%, -50%);
   }
 
   .welcome span {
@@ -347,7 +367,7 @@
   .sign {
     width: 650px;
     height: 650px;
-    top: 55%;
+    top: 52.5%;
   }
 
   .welcome span {
