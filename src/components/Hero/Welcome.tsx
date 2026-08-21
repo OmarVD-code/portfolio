@@ -3,41 +3,42 @@ import { useNavigateSection } from "@/hooks/useNavigateSection";
 import { useI18n } from "@/i18n/I18nProvider";
 import myPic from "@/assets/img/photo.jpg";
 
-
 export default function Welcome() {
     const navigate = useNavigateSection();
     const { t } = useI18n();
 
     return (
         <section id="wallpaper_" className="wallpaper">
-            <div className="sign"></div>
-            <div className="text">
-                <div className="welcome">
-                    <span>W</span>
-                    <span>E</span>
-                    <span>L</span>
-                    <span>C</span>
-                    <span>O</span>
-                    <span>M</span>
-                    <span>E</span>
+            <div className="welcome-stage">
+                <div className="sign" aria-hidden="true"></div>
+                <div className="text">
+                    <div className="welcome">
+                        <span>W</span>
+                        <span>E</span>
+                        <span>L</span>
+                        <span>C</span>
+                        <span>O</span>
+                        <span>M</span>
+                        <span>E</span>
+                    </div>
+                    <div className="to">
+                        <span>TO</span>
+                    </div>
+                    <div className="my">My Portfolio</div>
+                    <div className="las">OMAR <br className="breaker" /> VILLARREAL</div>
+                    <div className="nv">SOFTWARE <br className="breaker" />DEVELOPER</div>
+                    <img
+                        className="photo"
+                        src={myPic}
+                        alt="Me"
+                    />
+                    <button
+                        className="hero-cta"
+                        onClick={() => navigate("portfolio_")}
+                    >
+                        {t("hero.cta")}
+                    </button>
                 </div>
-                <div className="to">
-                    <span>TO</span>
-                </div>
-                <div className="my">My Portfolio</div>
-                <div className="las">OMAR <br className="breaker" /> VILLARREAL</div>
-                <div className="nv">SOFTWARE <br className="breaker" />DEVELOPER</div>
-                <img
-                    className="photo"
-                    src={myPic}
-                    alt="Me"
-                />
-                <button
-                    className="hero-cta"
-                    onClick={() => navigate("portfolio_")}
-                >
-                    {t("hero.cta")}
-                </button>
             </div>
         </section>
     )
