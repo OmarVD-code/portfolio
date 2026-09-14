@@ -30,7 +30,7 @@ export function useActiveSection(sectionIds: string[], options?: IntersectionObs
 
         sections.forEach((sec) => observer.observe(sec));
         return () => observer.disconnect();
-    }, [sectionIds.join("|")]);
+    }, [sectionIds, options]);
 
 
     return activeId;

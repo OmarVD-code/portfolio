@@ -10,7 +10,19 @@ export const translations = {
             contact: "Contact",
         },
         hero: {
+            eyebrow: "Full-stack engineering · Lima, Peru",
+            role: "Software Developer",
+            intro: "I build reliable digital products that turn complex business needs into clear, scalable experiences.",
             cta: "Explore My Work",
+            contact: "Let's talk",
+            highlights_label: "Professional highlights",
+            years: "Years building products",
+            projects: "Selected projects",
+            languages: "Languages",
+            card_label: "Omar Villarreal profile card",
+            card_status: "Available for new challenges",
+            card_location: "Lima · Peru",
+            scroll: "Discover",
         },
         about: {
             marquee: "Pull the lever and see what happens!",
@@ -29,6 +41,9 @@ export const translations = {
         },
         projects: {
             marquee: "HERE ARE SOME PROJECTS I'VE WORKED ON",
+            case_study: "Selected case",
+            technologies: "Technologies used",
+            demo: "Live site",
             code: "Code",
             1: {
                 title: "AMG Soft",
@@ -49,8 +64,13 @@ export const translations = {
         },
         skills: {
             marquee: "ROLL THE DICE OR USE THE CONTROL PANEL TO SEE MY SKILLS.",
+            eyebrow: "The house stack",
+            title: "Technical skills, dealt differently.",
+            description: "Roll the die to explore the stack, or show every category at once.",
             controller: {
+                label: "Game controls",
                 roll: "Roll",
+                color_label: "Dice finish",
                 colors: {
                     white: "White",
                     black: "Black"
@@ -67,11 +87,17 @@ export const translations = {
         },
         contact: {
             marquee: "FEEL FREE TO REACH OUT",
+            eyebrow: "Place your bet",
+            title: "Let's build something valuable.",
+            description: "Have a product, challenge or opportunity in mind? Tell me the essentials and I'll get back to you.",
+            email_label: "Or email me directly",
             form: {
                 name: "Fullname",
                 email: "Email",
                 message: "Message",
                 submit: "Submit",
+                name_placeholder: "Your name",
+                message_placeholder: "Tell me briefly about your idea",
                 success: "Thanks for contacting me! I'll get back to you as soon as possible.",
             }
         }
@@ -85,7 +111,19 @@ export const translations = {
             contact: "Contacto",
         },
         hero: {
+            eyebrow: "Ingeniería full-stack · Lima, Perú",
+            role: "Software Developer",
+            intro: "Construyo productos digitales sólidos que convierten necesidades complejas de negocio en experiencias claras y escalables.",
             cta: "Ver mi trabajo",
+            contact: "Hablemos",
+            highlights_label: "Datos profesionales destacados",
+            years: "Años creando productos",
+            projects: "Proyectos seleccionados",
+            languages: "Idiomas",
+            card_label: "Tarjeta de presentación de Omar Villarreal",
+            card_status: "Disponible para nuevos retos",
+            card_location: "Lima · Perú",
+            scroll: "Descubrir",
         },
         about: {
             marquee: "¡Tire de la palanca y vea lo que sucede!",
@@ -104,6 +142,9 @@ export const translations = {
         },
         projects: {
             marquee: "AQUÍ ALGUNOS PROYECTOS EN LOS QUE HE TRABAJADO",
+            case_study: "Caso seleccionado",
+            technologies: "Tecnologías utilizadas",
+            demo: "Ver proyecto",
             code: "Código",
             1: {
                 title: "AMG Soft",
@@ -124,8 +165,13 @@ export const translations = {
         },
         skills: {
             marquee: "TIRE EL DADO O UTILICE EL PANEL DE CONTROL PARA VER MIS HABILIDADES",
+            eyebrow: "La apuesta tecnológica",
+            title: "Habilidades técnicas, presentadas diferente.",
+            description: "Tira el dado para explorar el stack o muestra todas las categorías a la vez.",
             controller: {
+                label: "Controles de juego",
                 roll: "Tirar",
+                color_label: "Acabado del dado",
                 colors: {
                     white: "Blanco",
                     black: "Negro"
@@ -142,11 +188,17 @@ export const translations = {
         },
         contact: {
             marquee: "NO DUDES EN CONTACTARME",
+            eyebrow: "Haz tu apuesta",
+            title: "Construyamos algo valioso.",
+            description: "¿Tienes un producto, reto u oportunidad en mente? Cuéntame lo esencial y me pondré en contacto contigo.",
+            email_label: "O escríbeme directamente",
             form: {
                 name: "Nombres",
                 email: "Correo electrónico",
                 message: "Mensaje",
                 submit: "Enviar",
+                name_placeholder: "Tu nombre",
+                message_placeholder: "Cuéntame brevemente sobre tu idea",
                 success: "Gracias por contactarme. Te responderé lo antes posible.",
             }
         }

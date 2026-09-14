@@ -54,10 +54,14 @@ export default function Navbar() {
                 <div className="nav-logo">
                     <img
                         src={pokerChip}
-                        alt="Logo"
+                        alt=""
                         width="50"
                         height="50"
                     />
+                    <span className="nav-brand">
+                        <strong>OV</strong>
+                        <small>Software Developer</small>
+                    </span>
                 </div>
 
                 <nav className={`nav-menu ${open ? "open" : ""}`}>

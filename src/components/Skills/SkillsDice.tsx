@@ -58,47 +58,55 @@ export default function SkillsDice() {
                     <div className="line">★ {t("skills.marquee")} ★</div>
                 </div>
             </div>
-            {!showAll && (
-                <div className="dice-wrap">
-                    <div
-                        ref={diceRef}
-                        className={`dice ${rolling ? "rolling" : ""} ${diceType}`}
-                        onClick={rollDice}
-                    >
-                        {skills.map((skill) => (
-                            <div key={skill.id} className={`dice-face ${skill.face}`}>
-                                <DiceFace
-                                    title={skill.title}
-                                    items={skill.items}
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )}
+            <div className="skills-intro">
+                <p>{t("skills.eyebrow")}</p>
+                <h2>{t("skills.title")}</h2>
+                <span>{t("skills.description")}</span>
+            </div>
 
-            {showAll && (
-                <div className="list-wrap">
-                    <div className={`list ${diceType}`}>
-                        {skills.map((skill) => (
-                            <div key={skill.id} className="list-face">
-                                <DiceFace
-                                    title={skill.title}
-                                    items={skill.items}
-                                />
-                            </div>
-                        ))}
+            <div className={`skills-stage ${showAll ? "skills-stage--list" : ""}`}>
+                {!showAll && (
+                    <div className="dice-wrap">
+                        <div
+                            ref={diceRef}
+                            className={`dice ${rolling ? "rolling" : ""} ${diceType}`}
+                            onClick={rollDice}
+                            onKeyDown={(event) => {
+                                if (event.key === "Enter" || event.key === " ") rollDice();
+                            }}
+                            role="button"
+                            tabIndex={0}
+                            aria-label={t("skills.controller.roll")}
+                        >
+                            {skills.map((skill) => (
+                                <div key={skill.id} className={`dice-face ${skill.face}`}>
+                                    <DiceFace title={skill.title} items={skill.items} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
 
-            <DiceController
-                showAll={showAll}
-                onRoll={rollDice}
-                diceType={diceType}
-                onChangeDiceType={setDiceType}
-                onToggleView={toggleView}
-            />
+                {showAll && (
+                    <div className="list-wrap">
+                        <div className={`list ${diceType}`}>
+                            {skills.map((skill) => (
+                                <div key={skill.id} className="list-face">
+                                    <DiceFace title={skill.title} items={skill.items} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                <DiceController
+                    showAll={showAll}
+                    onRoll={rollDice}
+                    diceType={diceType}
+                    onChangeDiceType={setDiceType}
+                    onToggleView={toggleView}
+                />
+            </div>
         </section>
     );
 }

@@ -1,8 +1,7 @@
-import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 import { useI18n } from "@/i18n/I18nProvider";
-import blackCardBack from "@/assets/img/blackcardback.png";
 
 type Props = {
+    id: number;
     title: string;
     desc: string;
     img: string;
@@ -13,56 +12,39 @@ type Props = {
     show_demo: boolean;
 };
 
-export default function ProjectCard({ title, desc, img, tools, demo, code, show_code, show_demo }: Props) {
-    const { cardRef, flipped, toggleFlipped } = useRevealOnScroll({
-        delay: 600,
-        initialFlipped: true,
-    });
-
+export default function ProjectCard({ id, title, desc, img, tools, demo, code, show_code, show_demo }: Props) {
     const { t } = useI18n();
 
     return (
-        <div
-            ref={cardRef}
-            className={`project flip-card ${flipped ? "is-flipped" : ""}`}
-            onClick={toggleFlipped}
-        >
-            <div className="flip-card-inner">
-                <div className="flip-card-front">
-                    <div className="project-header">
-                        <img src={img} alt={title} />
-                    </div>
-                    <div className="project-body">
-                        <div className="project-title">
-                            <strong>{t(title)}</strong>
-                        </div>
-                        <div className="project-description">
-                            <p>{t(desc)}</p>
-                        </div>
-                        <div className="project-tools">
-                            {tools.map(t => (
-                                <span key={t} className="tag">
-                                    {t}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="project-footer">
-                        {show_demo && <a href={demo} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title="Demo"
-                        >
-                            <i className="fab fa-chrome" />
-                        </a>}
-                        {show_code && <a href={code} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} title={t("projects.code")}
-                        >
-                            <i className="fab fa-github" />
-                        </a>}
-                    </div>
-                </div>
-
-                <div className="flip-card-back">
-                    <img src={blackCardBack} alt="Black card back" />
+        <article className="project">
+            <div className="project-header">
+                <img src={img} alt="" />
+                <span className="project-number">0{id}</span>
+            </div>
+            <div className="project-body">
+                <p className="project-kicker">{t("projects.case_study")}</p>
+                <h3 className="project-title">{t(title)}</h3>
+                <p className="project-description">{t(desc)}</p>
+                <div className="project-tools" aria-label={t("projects.technologies")}>
+                    {tools.slice(0, 6).map(tool => (
+                        <span key={tool} className="tag">{tool}</span>
+                    ))}
                 </div>
             </div>
-        </div>
+            {(show_demo || show_code) && (
+                <footer className="project-footer">
+                    {show_demo && (
+                        <a href={demo} target="_blank" rel="noreferrer">
+                            {t("projects.demo")} <span aria-hidden="true">↗</span>
+                        </a>
+                    )}
+                    {show_code && (
+                        <a href={code} target="_blank" rel="noreferrer">
+                            {t("projects.code")} <span aria-hidden="true">↗</span>
+                        </a>
+                    )}
+                </footer>
+            )}
+        </article>
     );
 }

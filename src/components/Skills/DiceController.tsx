@@ -19,20 +19,18 @@ export default function SkillsDiceController({
 
     return (
         <div className="controller">
-            <button onClick={onRoll} disabled={showAll}>
+            <p className="controller-label">{t("skills.controller.label")}</p>
+            <button className="controller-primary" onClick={onRoll} disabled={showAll}>
                 {t("skills.controller.roll")}
             </button>
 
-            <br />
-
-            <select value={diceType} onChange={(e) => onChangeDiceType(e.target.value)}>
+            <label htmlFor="dice-color">{t("skills.controller.color_label")}</label>
+            <select id="dice-color" value={diceType} onChange={(e) => onChangeDiceType(e.target.value)}>
                 <option value="">{t("skills.controller.colors.white")}</option>
                 <option value="black">{t("skills.controller.colors.black")}</option>
             </select>
 
-            <br />
-
-            <button onClick={onToggleView}>
+            <button className="controller-secondary" onClick={onToggleView}>
                 {showAll ? t("skills.controller.dice_mode") : t("skills.controller.show_all")}
             </button>
         </div>
