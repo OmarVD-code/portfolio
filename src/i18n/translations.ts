@@ -66,11 +66,11 @@ export const translations = {
             marquee: "ROLL THE DICE OR USE THE CONTROL PANEL TO SEE MY SKILLS.",
             eyebrow: "The house stack",
             title: "Technical skills, dealt differently.",
-            description: "Roll the die to explore the stack, or show every category at once.",
+            description: "Roll the dice to explore the stack, or show every category at once.",
             controller: {
                 label: "Game controls",
                 roll: "Roll",
-                color_label: "Dice finish",
+                color_label: "Dice color",
                 colors: {
                     white: "White",
                     black: "Black"
@@ -171,7 +171,7 @@ export const translations = {
             controller: {
                 label: "Controles de juego",
                 roll: "Tirar",
-                color_label: "Acabado del dado",
+                color_label: "Color del dado",
                 colors: {
                     white: "Blanco",
                     black: "Negro"
