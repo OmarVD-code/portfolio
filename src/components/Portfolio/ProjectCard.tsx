@@ -22,7 +22,6 @@ export default function ProjectCard({ id, title, desc, img, tools, demo, code, s
                 <span className="project-number">0{id}</span>
             </div>
             <div className="project-body">
-                <p className="project-kicker">{t("projects.case_study")}</p>
                 <h3 className="project-title">{t(title)}</h3>
                 <p className="project-description">{t(desc)}</p>
                 <div className="project-tools" aria-label={t("projects.technologies")}>

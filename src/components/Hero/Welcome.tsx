@@ -26,7 +26,7 @@ export default function Welcome() {
                             className="hero-cta"
                             onClick={() => navigate("portfolio_")}
                         >
-                            {t("hero.cta")} <span aria-hidden="true">→</span>
+                            {t("hero.cta")}
                         </button>
                         <button
                             className="hero-cta hero-cta--secondary"
