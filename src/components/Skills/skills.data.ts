@@ -17,6 +17,8 @@ import dockerSvg from "@/assets/img/skills/docker-original.svg";
 import gitSvg from "@/assets/img/skills/git-original.svg";
 import githubSvg from "@/assets/img/skills/github-original.svg";
 import npmSvg from "@/assets/img/skills/npm-original-wordmark.svg";
+import claudeSvg from "@/assets/img/skills/claude-original.svg";
+import codexSvg from "@/assets/img/skills/codex-original.svg";
 import spanishSvg from "@/assets/img/languages/es.svg";
 import englishSvg from "@/assets/img/languages/gb.svg";
 
@@ -130,6 +132,14 @@ export const skills = [
                 name: "npm",
                 img: npmSvg
             },
+            {
+                name: "Claude Code",
+                img: claudeSvg
+            },
+            {
+                name: "Codex",
+                img: codexSvg
+            }
         ]
     },
     {

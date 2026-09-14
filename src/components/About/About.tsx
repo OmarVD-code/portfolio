@@ -1,6 +1,6 @@
 import "@/components/About/styles/About.css";
 import Description from "@/components/About/Description";
-import SlotMachine from "@/components/About/SlotMachine";
+import ProfessionalProfile from "@/components/About/ProfessionalProfile";
 import { useI18n } from "@/i18n/I18nProvider";
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
 
             <div className="about-wrapper">
                 <Description />
-                <SlotMachine />
+                <ProfessionalProfile />
             </div>
         </section>
     );

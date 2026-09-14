@@ -25,7 +25,7 @@ export const translations = {
             scroll: "Discover",
         },
         about: {
-            marquee: "Pull the lever and see what happens!",
+            marquee: "Experience, links, and verified credentials",
             title: "About Me",
             description: "Fullstack Developer with over 3 years of experience building real, business-oriented systems. I have worked on the development of critical modules, dashboards, end-to-end workflows, and business rules for production web applications. I have led and supervised other developers, supporting code reviews, technical decision-making, and architectural improvements, always focusing on code quality, maintainability, and performance.",
             experience: "Experience",
@@ -34,10 +34,21 @@ export const translations = {
             role_answer: "Fullstack Developer",
             email: "Email",
             phone: "Phone",
-            projects: "Projects",
-            contact: "Contact",
-            download_cv: "Download CV",
-            title_slot_machine: "Relevant Links"
+            profile: {
+                title: "Professional Profile",
+                relevant_links: "Relevant Links",
+                certifications: "AWS Certifications",
+                links: {
+                    cv: "CV",
+                    github: "GitHub",
+                    linkedin: "LinkedIn",
+                },
+                badges: {
+                    cloud_practitioner: "AWS Certified Cloud Practitioner",
+                    ai_practitioner: "AWS Certified AI Practitioner",
+                    view_credential: "View credential",
+                },
+            },
         },
         projects: {
             marquee: "HERE ARE SOME PROJECTS I'VE WORKED ON",
@@ -82,7 +93,7 @@ export const translations = {
             back_end: "Back-end",
             devops: "DevOps",
             database: "Database",
-            tools: "Tools",
+            tools: "Development & AI Tools",
             languages: "Languages"
         },
         contact: {
@@ -126,7 +137,7 @@ export const translations = {
             scroll: "Descubrir",
         },
         about: {
-            marquee: "¡Tire de la palanca y vea lo que sucede!",
+            marquee: "Experiencia, enlaces y credenciales verificadas",
             title: "Sobre mí",
             description: "Desarrollador Fullstack con más de 3 años de experiencia construyendo sistemas reales orientados al negocio. He trabajado en el desarrollo de módulos críticos, dashboards, flujos completos y reglas de negocio para aplicaciones web en producción. He liderado y supervisado a otros desarrolladores, apoyando en revisiones de código, toma de decisiones técnicas y mejoras de arquitectura, siempre con foco en la calidad, mantenibilidad y rendimiento.",
             experience: "Experiencia",
@@ -135,10 +146,21 @@ export const translations = {
             role_answer: "Desarrollador Fullstack",
             email: "Correo electrónico",
             phone: "Teléfono",
-            projects: "Proyectos",
-            contact: "Contacto",
-            download_cv: "Descargar CV",
-            title_slot_machine: "Links Relevantes"
+            profile: {
+                title: "Perfil profesional",
+                relevant_links: "Enlaces relevantes",
+                certifications: "Certificaciones AWS",
+                links: {
+                    cv: "CV",
+                    github: "GitHub",
+                    linkedin: "LinkedIn",
+                },
+                badges: {                    
+                    cloud_practitioner: "AWS Certified Cloud Practitioner",
+                    ai_practitioner: "AWS Certified AI Practitioner",
+                    view_credential: "Ver credencial",
+                },
+            },
         },
         projects: {
             marquee: "AQUÍ ALGUNOS PROYECTOS EN LOS QUE HE TRABAJADO",
@@ -183,7 +205,7 @@ export const translations = {
             back_end: "Back-end",
             devops: "DevOps",
             database: "Bases de datos",
-            tools: "Herramientas",
+            tools: "Herramientas de desarrollo e IA",
             languages: "Idiomas"
         },
         contact: {
